@@ -38,13 +38,18 @@
 
 .main-content {
     width: 100%;
-    background: #F3F8FB;
+    background: #F3F3F3 0% 0% no-repeat padding-box;
 }
 
 .main-content-inner {
     padding: 0 30px 50px;
 }
-
+.main-content-inner .card {
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+}
+.main-content-inner .card-body {
+   padding: 0;
+}
 /*------------------------- END Core Css -------------------*/
 
 
@@ -610,31 +615,16 @@ a.simple-text.logo-mini {
 /*-------------------- 2.3 Page Title Area -------------------*/
 
 .page-title-area {
-    padding: 0 30px;
-    background: #fff;
-    position: relative;
-}
-
-.page-title-area:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 4px;
-    height: 36px;
-    background: var(--primary-color);
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    padding: 50px 30px 0;
 }
 
 .page-title {
-    font-size: 24px;
-    font-weight: 300;
-    color: #313b3d;
+    font-size: 40px;
+    font-weight: 600;
     letter-spacing: 0;
     margin-right: 30px;
+    color: #000000;
 }
-
 ul.breadcrumbs {
     margin-top: 4px;
 }
@@ -798,7 +788,7 @@ ul.breadcrumbs {
 }
 
 .header-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
@@ -883,7 +873,11 @@ ul.breadcrumbs {
 table.dbkit-table {
     width: 100%;
 }
+tr.heading-td {
 
+    background: #026C64 0% 0% no-repeat padding-box !important;
+border-radius: 20px 20px 0px 0px;
+}
 table.dbkit-table tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -902,6 +896,11 @@ table.dbkit-table tr {
     margin: 20px 2px 6px;
     background: #f5f8f9;
 }
+.dbkit-table .heading-td td {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 table.dbkit-table tr th,
 table.dbkit-table tr td {
@@ -911,15 +910,26 @@ table.dbkit-table tr td {
 table.dbkit-table tr:hover {
     border-color: #e4e2f5;
 }
-
-table.dbkit-table tr td {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: #616161;
-    min-width: 141px;
+tr.bg-Orange {
+    background: #FF8000 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
 }
-
+tr.bg-Green {
+    background: #4FFF00 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+}
+table.dbkit-table tr td {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #000000;
+    min-width: 210px;
+}
+table.dbkit-table tr td:first-child {
+    min-width: 45px;
+}
 .mv-icon img {
     max-width: 29px;
 }
@@ -936,12 +946,14 @@ table.dbkit-table tr td {
 .stats-chart canvas {
     margin: auto;
 }
-
-.buy img,
-.sell img {
-    margin-left: 10px;
+.buy {
+    position: relative;
 }
-
+.buy img {
+    position: absolute;
+    right: 14%;
+    top: 7px;
+}
 /*-------------------- END Market value ------------------- */
 
 
@@ -1126,20 +1138,23 @@ table.dbkit-table tr td {
     width: 100%;
     margin-top: 20px;
     height: 79px;
-    background: var(--primary-color);
-    color: #fff;
-    letter-spacing: 0;
-    font-weight: 700;
+    font-weight: 500;
     border: none;
-    border-radius: 2px;
-    font-size: 18px;
+    font-size: 24px;
     outline: none;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    background: #026C64 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 42px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 0 30px;
 }
 
 .exchange-btn button:hover {
-    background: #3c34ab;
+    background: #163458;
 }
 
 .footer-area {
@@ -1173,10 +1188,6 @@ table.dbkit-table tr td {
 
 /* Todays Order List */
 
-.dbkit-table .heading-td td {
-    color: #444;
-    font-weight: 500;
-}
 
 .pagination_area ul li {
     display: inline-block;
@@ -1858,7 +1869,7 @@ p.card-text {
 }
 
 .pagination li a {
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*-------------------- END Pagination ------------------- */
@@ -1956,7 +1967,7 @@ label {
     color: #444;
     margin: 9px 0;
     display: inline-block;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fw-icons a:hover {
@@ -2005,7 +2016,7 @@ label {
     color: #444;
     margin: 9px 0;
     display: inline-block;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -2243,7 +2254,7 @@ table.dataTable thead td {
     padding: 12px 19px;
     border-radius: 3px;
     text-transform: capitalize;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     letter-spacing: 0.03em;
     margin-left: 6px;
@@ -2530,7 +2541,7 @@ table.dataTable thead td {
     color: #fff;
     padding: 28px;
     letter-spacing: 0;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
@@ -2601,7 +2612,7 @@ table.dataTable thead td {
     color: #686cdc;
     margin-bottom: 28px;
     text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff, 4px 4px 0 #6569dc, 5px 5px 0 #6569dc, 6px 6px 0 #6569dc, 7px 7px 0 #6569dc;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .error-content img {
@@ -2679,7 +2690,7 @@ table.dataTable thead td {
     font-size: 16px;
     color: #444;
     font-weight: 600;
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     padding-bottom: 15px;
 }
@@ -2722,7 +2733,7 @@ table.dataTable thead td {
 }
 
 .offset-settings h4 {
-    font-family: 'lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 0;
     font-weight: 700;
