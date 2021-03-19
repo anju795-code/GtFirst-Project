@@ -279,6 +279,13 @@
     }
 }
 
+/* @media (min-width: 992px){
+    .metismenu li.active-pro {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+    }
+    } */
 /* Normal desktop :991px. */
 
 @media (min-width: 768px) and (max-width: 991px) {

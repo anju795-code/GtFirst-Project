@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>srtdash - ICO Dashboard</title>
+    <title>AGFIRST</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
@@ -43,37 +43,43 @@
                      C
                     </a>
             
-                    <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                    <a href="http://www.creative-tim.com" class="simple-text logo-normal  mx-3">
                         Customer1
                     </a>
                     
                 </div>
+                <hr class="sidebar-divider my-0">
+                <div class="mainMenu">
+                    <a href="javascript:void(0)">Main menu</a>
+                </div>
+                <hr class="sidebar-divider my-0 mb-5">
             </div>
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
-                            <hr class="sidebar-divider my-0">
-                            <li>
-                                <a href="javascript:void(0)"><span>Main menu</span></a>
-                            </li>
-                            <hr class="sidebar-divider my-0 mb-5">
-                   
-                            <li class="active">
-                                <a href="index.html" ><i class="fa fa-home"></i><span>Home</span></a>
+                         <li class="active">
+                                <a href="index.html" ><img src="assets/images/home.svg"><span>Home</span></a>
                             </li>
                             <li>
-                                <a href="index.html" ><i class="fa fa-calculator"></i><span>Make New Calculation</span></a>
+                                <a href="index.html" ><img src="assets/images/Calulater.svg"><span>Make New Calculation</span></a>
                             </li>
                             <li>
-                                <a href="index.html" ><i class="fa fa-history"></i><span>Selection History</span></a>
+                                <a href="index.html" ><img src="assets/images/History.svg"><span>Selection History</span></a>
                             </li>
                            
-                         
-                          
-                            <li><a href="maps.html"><i class="ti-map-alt"></i> <span>Long Term</span></a></li>
-                            <li><a href="invoice.html"><i class="fa fa-info-circle"></i><span>Information</span></a></li>
-                            <li><a href="invoice.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+                            <li>
+                                <a href="maps.html"><img src="assets/images/Term.svg"> <span>Long Term</span></a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><img src="assets/images/Information.svg"><span>Information</span></a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><img src="assets/images/Settings.svg"><span>Settings</span></a>
+                            </li>
+                            <li class="active-pro">
+                                <a href="./upgrade.html"><img src="assets/images/LogOut.svg"><span>Logout</span></a>
+                            </li>
 
                         </ul>
                     </nav>
@@ -136,9 +142,10 @@
                                 </div>
                                 <div class="market-status-table mt-4">
                                     <div class="table-responsive">
-                                        <table class="dbkit-table">
-                                            <tr class="heading-td">
-                                                <td class="mv-icon">Delete</td>
+                                        <table class="  dbkit-table" >
+                                        <thead>
+                                         <tr class="heading-td">
+                                                <th class="mv-icon">Delete</th>
                                                 <td class="buy">Role</td>
                                                 <td class="buy">Purchase Location</td>
                                                 <td class="buy">Stock</td>
@@ -146,57 +153,73 @@
                                                 <td class="buy">Stock Age</td>
                                                 <td class="stats-chart">Live Weight</td>
                                             </tr>
+                                          </thead>
+                                            <tbody>
                                             <tr class="bg-Green">
-                                                <td class="mv-icon"><i class="ti-trash"></i>
-                                                </td>
-                                                <td class="buy">Buyer  <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">North Island <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Cattle <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Bull  <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">R1  <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <th class="mv-icon"><img src="assets/images/Trash.png" alt="icon"></i>
+                                                </th>
+                                                <td class="buy">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
                                                 <td class="stats-chart">
                                                     340 kg
                                                 </td>
                                             </tr>
                                             <tr class="bg-Orange">
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><i class="ti-trash"></i></div>
-                                                </td>
-                                                <td class="buy">Buyer <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">North Island <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Sheep <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Ewe <img  src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Ewe Lamb <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <th class="mv-icon">
+                                                    <div class="mv-icon"><img src="assets/images/Trash.png" alt="icon"></i></div>
+                                                </th>
+                                                <td class="buy">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Sheep <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ewe <img  src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ewe Lamb <img src="assets/images/Arrow.svg" alt="icon"></td>
                                                 <td class="stats-chart">
                                                     40 kg
                                                 </td>
                                             </tr>
                                             <tr class="bg-Orange">
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><i class="ti-trash"></i></div>
-                                                </td>
-                                                <td class="buy">Buyer <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">North Island <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Cattle <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Steer <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">R1 <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <th class="mv-icon">
+                                                    <div class="mv-icon"><img src="assets/images/Trash.png" alt="icon"></i></div>
+                                                </th>
+                                                <td class="buy">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Steer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">R1 <img src="assets/images/Arrow.svg" alt="icon"></td>
                                                 <td class="stats-chart">
                                                     400 kg
                                                 </td>
                                             </tr>
                                             <tr class="bg-Orange">
-                                                <td class="mv-icon">
-                                                    <div class="mv-icon"><i class="ti-trash"></i></div>
-                                                </td>
-                                                <td class="buy">Buyer <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">South Island <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Sheep <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Ram <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="buy">Ram Lamb  <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <th class="mv-icon">
+                                                    <div class="mv-icon"><img src="assets/images/Trash.png" alt="icon"></i></div>
+                                                </th>
+                                                <td class="buy">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">South Island <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Sheep <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ram <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ram Lamb  <img src="assets/images/Arrow.svg" alt="icon"></td>
                                                 <td class="stats-chart">
                                                     50 kg
                                                 </td>
                                             </tr>
+                                            <tr class="bg-Red">
+                                                <th class="mv-icon">
+                                                    <div class="mv-icon"><img src="assets/images/Trash.png" alt="icon"></i></div>
+                                                </th>
+                                                <td class="buy">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">South Island <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Sheep <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ram <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="buy">Ram Lamb  <img src="assets/images/Arrow.svg" alt="icon"></td>
+                                                <td class="stats-chart">
+                                                    50 kg
+                                                </td>
+                                            </tr>
+                                            <tbody>
                                         </table>
                                     </div>
                                 </div>
