@@ -171,14 +171,10 @@
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
-    .container {
-        max-width: 1200px;
-    }
+    
 }
 @media (min-width: 1200px){
-    .container {
-        max-width: 1200px;
-    }
+
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {

@@ -19,7 +19,7 @@
     width: auto;
     height: 94px;
     line-height: 94px;
-    background: #9ED8D4 0% 0% no-repeat padding-box;
+    background: #9ED8D4 ;
     box-shadow: 0px 3px 6px #0000007a;
     border-radius: 47px;
     opacity: 1;
@@ -40,7 +40,7 @@
     width: auto;
     height: 94px;
     line-height: 94px;
-    background: #738AA6 0% 0% no-repeat padding-box;
+    background: #738AA6 ;
     box-shadow: 0px 3px 6px #0000007a;
     border-radius: 47px;
     opacity: 1;
@@ -115,14 +115,15 @@
 
 .main-content {
     width: 100%;
-    background: #F3F3F3 0% 0% no-repeat padding-box;
+    background: #F3F3F3 ;
+    padding: 0 50px;
 }
 
 .main-content-inner {
     padding: 0 0px 50px;
 }
 .main-content-inner .card {
-    background: #F3F3F3 0% 0% no-repeat padding-box;
+    background: #F3F3F3 ;
 }
 .main-content-inner .card-body {
    padding: 0;
@@ -1040,7 +1041,7 @@ ul.breadcrumbs {
 
 .History-table tr.heading-td {
 
-    background: #026C64 0% 0% no-repeat padding-box !important;
+    background: #026C64  !important;
 border-radius: 20px 20px 0px 0px;
 display: flex;
 height: 71px;
@@ -1051,17 +1052,17 @@ margin: 20px 2px 6px;
 
 
 .History-table tr.bg-Orange  td{
-    background: #FF8000 0% 0% no-repeat padding-box !important;
+    background: #FF8000  !important;
     margin: 0px -1px 6px;
 }
 .History-table tr.bg-Green td {
     margin: 0px -1px 6px;
-    background: #4FFF00 0% 0% no-repeat padding-box !important;
+    background: #4FFF00  !important;
 }
 
 .History-table tr.bg-Red td {
     margin: 0px -1px 6px;
-    background: #FF0200 0% 0% no-repeat padding-box !important;
+    background: #FF0200  !important;
 
 }
 
@@ -1154,7 +1155,7 @@ table.dbkit-table {
 
 table.dbkit-table tr.heading-td {
 
-    background: #026C64 0% 0% no-repeat padding-box !important;
+    background: #026C64  !important;
 border-radius: 20px 20px 0px 0px;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -1227,17 +1228,17 @@ table.dbkit-table tr {
     padding-right: 19px;
 }
 table.dbkit-table  tr.bg-Orange  td{
-    background: #FF8000 0% 0% no-repeat padding-box !important;
+    background: #FF8000  !important;
 }
 table.dbkit-table tr.bg-Green td {
 
-    background: #4FFF00 0% 0% no-repeat padding-box !important;
+    background: #4FFF00  !important;
 
 }
 
 table.dbkit-table tr.bg-Red td {
 
-    background: #FF0200 0% 0% no-repeat padding-box !important;
+    background: #FF0200  !important;
 
 }
 table.dbkit-table tr.bg-Orange td:nth-child(2)  {
@@ -1465,7 +1466,7 @@ position: absolute;
 }
 
 .box-body {
-    background: #026C64 0% 0% no-repeat padding-box;
+    background: #026C64 ;
     border-radius: 20px 20px 0px 0px;
     margin: 0px -20px 0;
     padding: 25px 20px;
@@ -1538,7 +1539,7 @@ position: absolute;
 }
 
 .Price-box .box-body {
-    background: #026C64 0% 0% no-repeat padding-box;
+    background: #026C64 ;
     border-radius: 20px 20px 0px 0px;
     margin: 0px -20px 0;
     padding: 18px 14px;
@@ -1755,7 +1756,7 @@ width: 41px;
     outline: none;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background: #026C64 0% 0% no-repeat padding-box;
+    background: #026C64 ;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 42px;
     letter-spacing: 0px;
@@ -2434,7 +2435,7 @@ p.card-text {
 /*-------------------- 13. Dropdown Button ------------------- */
 
 .right-section button.btn.btn-rounded {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
     color: #000000;
@@ -2534,7 +2535,7 @@ p.card-text {
     padding-bottom: 30px;
 }
 .DeleteModal .modal-content {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 45px;
 }
@@ -2572,12 +2573,12 @@ p.card-text {
 }
 
 .DeleteModal  button.btn.btn-secondary {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     margin-right: 94px;
 }
 
 .DeleteModal  button.btn.btn-primary{
-    background: #163458 0% 0% no-repeat padding-box;
+    background: #163458 ;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 35px;
     border: none;
@@ -2591,7 +2592,7 @@ p.card-text {
     box-shadow: none !important;
 }
 .DeleteModal  .btn {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 35px;
     color: #000000;
@@ -3067,7 +3068,7 @@ table.dataTable thead td {
     width: 774px;
     max-width: 100%;
     position: relative;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     box-shadow: 0px 3px 6px #0000007a;
     border-radius: 90px;
     opacity: 1;
@@ -3163,7 +3164,7 @@ table.dataTable thead td {
 .form-gp input {
     width: 100%;
     padding: 10px 20px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF ;
     border: 1px solid #707070;
     border-radius: 39px;
     opacity: 1;
@@ -3212,7 +3213,7 @@ table.dataTable thead td {
     display: inline-block;
     padding: 7px 58px;
     color: #000000;
-    background: #9ED8D4 0% 0% no-repeat padding-box;
+    background: #9ED8D4 ;
     box-shadow: 0px 3px 6px #0000007a;
     border-radius: 47px;
     opacity: 1;
@@ -3220,7 +3221,7 @@ table.dataTable thead td {
     font-weight: 500;
 }
 .submit-btn-area button:hover {
-    background: #9ED8D4 0% 0% no-repeat padding-box;
+    background: #9ED8D4 ;
     color: #000000;
 }
 
@@ -3229,7 +3230,7 @@ table.dataTable thead td {
 }
 
 .submit-btn-area button a:hover  {
-    background: #9ED8D4 0% 0% no-repeat padding-box;
+    background: #9ED8D4 ;
     color: #000000;
 
 }
