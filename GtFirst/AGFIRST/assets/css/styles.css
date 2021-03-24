@@ -237,7 +237,7 @@ a.simple-text.logo-mini {
     width: 40px !important;
     color: #fff!important;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 40px;
    
 }
@@ -300,7 +300,9 @@ a.simple-text.logo-mini {
     top: 25px;
     bottom: 0;
 }
-
+.metismenu li a span {
+ display: block;
+}
 .metismenu li a img {
     max-width: 100%;
     height: auto;
@@ -657,7 +659,7 @@ a.simple-text.logo-mini {
     top: -7px;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     background: var(--primary-color);
     height: 20px;
@@ -793,7 +795,7 @@ a.simple-text.logo-mini {
 
 .page-title {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0;
     margin-right: 30px;
     color: #000000;
@@ -963,7 +965,7 @@ ul.breadcrumbs {
 .header-title {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0;
     color: #333;
     text-transform: capitalize;
@@ -990,7 +992,7 @@ ul.breadcrumbs {
 
 .single-report span {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: #565656;
     letter-spacing: 0;
 }
@@ -1378,6 +1380,89 @@ table.dbkit-table .Icon.RightSpace img {
 /*-------------------- END Live Crypto Price ------------------- */
 
 /*-------------------- 2.8 Saved Customisations------------------- */
+.Saved-Customisations .card-link{
+    margin-top: 20px;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 42px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 1.3rem 2rem;
+    width: 100%;
+    display: inline-block;
+ 
+}
+.Saved-Customisations .card-link.collapsed{
+    background: #026C64;
+}
+.Saved-Customisations .card-link:hover {
+    background: #163458;
+}
+
+.Saved-Customisations .card-link {
+    color: #fff;
+    background: #163458;
+}
+
+
+
+.Saved-Customisations .DetailsAccordion  {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    padding: 20px 30px;
+    border-radius: 35px;
+    position: relative;
+    margin-top: 45px;
+}
+.Saved-Customisations  .DetailsAccordion::after {
+    background-image: url(../images/TabArrow.png);
+}
+
+.Saved-Customisations .DetailsAccordion-content>#accordion11::after {
+position: absolute;
+    top: -39px;
+    left: 4%;
+    display: block;
+    width: 28px;
+    height: 40px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.Saved-Customisations  .DetailsAccordion-content>#accordion12::after {
+    position: absolute;
+        top: -39px;
+        left: 50%;
+        display: block;
+        width: 28px;
+        height: 40px;
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .Saved-Customisations .DetailsAccordion-content>#accordion13::after {
+        position: absolute;
+        top: -39px;
+        left: auto;
+        right: 6%;
+        display: block;
+        width: 28px;
+        height: 40px;
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain
+        }
+
 
 .Saved-Customisations .nav-pills .nav-link{
     margin-top: 20px;
@@ -1545,13 +1630,13 @@ position: absolute;
     padding: 18px 14px;
 }
 .Price-box .box-body .box-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
     color: #FFFFFF;
 }
 .Price-box h4 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     color: #000000;
     padding: 10px 5px;
 }
@@ -1650,10 +1735,185 @@ width: 41px;
     left: 35%;
   }
   
-  /*--------- END --------*/
 
 /*-------------------- END Saved Customisations ------------------- */
 
+
+/*--------------------  Make New Caculation ------------------- */
+.NewSelection-btn button {
+width: 100%;
+margin-top: 20px;
+height: 61px;
+font-weight: 500;
+border: none;
+font-size: 22px;
+outline: none;
+-webkit-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+background: #FFFFFF ;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 38px;
+letter-spacing: 0px;
+color: #000000;
+text-align: left;
+padding: 0 30px;
+}
+
+.NewSelection-btn button:hover {
+background: #163458;
+color: #FFFFFF ;
+}
+.MakeNewSelection-Details{
+    display: none;
+}
+
+.active .NewSelection-btn button{
+    background: #163458;  
+    color: #FFFFFF ;
+}
+.MakeNewSelection-Details .row{
+    padding: 41px 0px 0;
+}
+h6.buttons-title {
+    color: #5C5C5C;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.sl-btns a.btn {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 38px;
+    color: #000000;
+    font-size: 22px;
+    width: 225px;
+    font-weight: 500;
+    padding: 15px 40px;
+}
+.sl-btns a.btn:hover {
+    background: #163458;
+    color: #FFFFFF ;
+    }
+.sl-btns.text-right a.btn {
+    text-align: right;
+}
+.sl-btns a.btn.active{
+    background: #163458;
+    color: #FFFFFF ;
+}
+.sl-btns.text-right a.btn:hover {
+    background: #FFFFFF ;
+    color: #000000;
+    }
+.sl-btns.text-right a.btn.active{
+    background: #FFFFFF ;
+    color: #000000;
+}
+.hrButtons {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.MakeNewSelection-Details hr.hr-line {
+    margin: 0;
+    border-top: 1px solid #e7e4e4;
+    width: 22%;
+    display: inline-block;
+    margin-block-start: 19.5em;
+    margin-block-end: 0.5em;
+}
+.AgFirst-default {
+    margin-top: 105px;
+    margin-bottom: 184px;
+}
+.AgFirst-default .default-btn {
+    width: 537px;
+    max-width: 100%;
+}
+.default-btn button:hover {
+    background: #163458;
+    color: #FFFFFF ;
+    }
+
+.default-btn button:hover::after{
+    background-image: url(../images/ArrowDown.png) !important;
+    }
+ .default-btn .dropdown.show  button{
+    background: #163458;
+    color: #FFFFFF ;
+}
+
+.default-btn button {
+    width: 100%;
+    margin-top: 20px;
+    height: 61px;
+    cursor: default !important;
+    font-weight: 500;
+    border: none;
+    font-size: 22px;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 38px;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: left;
+    padding: 0 30px;
+  
+
+}
+.AgFirst-default .default-btn .dropdown .dropdown-toggle{
+    position: relative;
+    z-index: 1;
+}
+.AgFirst-default .default-btn .dropdown .dropdown-toggle::after {
+    position: absolute;
+    top: 12%;
+    right: 25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/ArrowUp.png);
+    border: none;
+    margin: 0;
+}
+
+.AgFirst-default .default-btn .dropdown.show .dropdown-toggle::after {
+    background-image: url(../images/ArrowDown.png);
+}
+.AgFirst-default .default-btn  .dropdown-menu {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius:23px;
+    width: 518px;
+    border: none;
+    z-index: 0;
+    margin: -7px 0px 0 12px;
+    padding: 20px;
+}
+
+.AgFirst-default .default-btn  .dropdown-menu .dropdown-item {
+    font-size: 17px;
+    color: #6F6F6F;
+    border-bottom: 1px solid #e1e1e1;
+    width: auto;
+    margin: 0 20px;
+    padding: 15px 10px;
+    font-weight: 500;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:none !important;
+}
+/*-------------------- END Make New Caculation ------------------- */
 
 /*-------------------- 2.9 Letest Post ------------------- */
 
@@ -1681,7 +1941,7 @@ width: 41px;
 
 .lts-content span {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: #565656;
     letter-spacing: 0;
 }
@@ -1726,7 +1986,7 @@ width: 41px;
     background: var(--primary-color);
     text-align: center;
     line-height: 80px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     letter-spacing: 0;
     font-size: 19px;
@@ -1742,7 +2002,7 @@ width: 41px;
     font-size: 30px;
     color: #686868;
     letter-spacing: 0;
-    font-weight: 600;
+    font-weight: 500;
     margin: 24px 0;
 }
 
@@ -1814,7 +2074,7 @@ width: 41px;
     border-radius: 50%;
     text-align: center;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: #4d4d4d;
     margin-left: 3px;
 }
@@ -2306,7 +2566,7 @@ width: 41px;
 
 .alert strong,
 .alert-link {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .alert-items .alert-primary {
@@ -2557,7 +2817,7 @@ p.card-text {
 
 .DeleteModal  .modal-body h3 {
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 25px;
     line-height: normal;
     color: #000000;
@@ -2944,7 +3204,7 @@ table.dataTable thead td {
 .invoice-address h3 {
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
     margin-bottom: 15px;
 }
@@ -2980,7 +3240,7 @@ table.dataTable thead td {
 
 .invoice-table tfoot tr td {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: #444;
 }
 
@@ -2993,7 +3253,7 @@ table.dataTable thead td {
     border-radius: 3px;
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.03em;
     margin-left: 6px;
 }
@@ -3052,7 +3312,7 @@ table.dataTable thead td {
 .login-form-head h4 {
     letter-spacing: 0;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 7px;
     color: #fff;
 }
@@ -3244,7 +3504,7 @@ table.dataTable thead td {
     border-radius: 40px;
     text-transform: capitalize;
     letter-spacing: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
 }
@@ -3331,7 +3591,7 @@ table.dataTable thead td {
 }
 
 .prc-list li.bold {
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 20px;
 }
 
@@ -3395,7 +3655,7 @@ table.dataTable thead td {
 .error-content p {
     font-size: 17px;
     color: #787bd8;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .error-content a {
@@ -3462,7 +3722,7 @@ table.dataTable thead td {
     display: block;
     font-size: 16px;
     color: #444;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding-bottom: 15px;
