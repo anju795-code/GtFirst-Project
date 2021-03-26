@@ -560,7 +560,7 @@ a.simple-text.logo-mini {
     display: block;
     width: 22px;
     height: 2px;
-    background: #b3aaaa;
+    background: #026C64;
     margin: 4px 0;
     border-radius: 15px;
     -webkit-transition: all 0.3s ease 0s;
@@ -1186,13 +1186,12 @@ margin: 20px 2px 6px;
 .dbkit-table .heading-td td {
     color: #fff;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     padding: 0 30px;
-    min-width: 175px;
     text-align: left;
 }
 .dbkit-table .heading-td td:nth-child(2)  {
-    padding: 0 0 0 40px !important;
+    padding: 0 0 0 50px !important;
 }
 
 .dbkit-table .heading-td th {
@@ -1207,11 +1206,11 @@ margin: 20px 2px 6px;
     overflow-x: auto;
 }
 table.dbkit-table tr td {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
     color: #000000;
-    min-width: 175px;
+    min-width: 212px;
     height: 67px;
     display: flex;
     align-items: center;
@@ -1253,32 +1252,26 @@ table.dbkit-table tr.bg-Red td {
 
 }
 table.dbkit-table tr.bg-Orange td:nth-child(2)  {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 35px 0 0 35px;
     padding: 0 0 0 30px !important;
 }
 table.dbkit-table tr.bg-Orange td:last-child {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 0px 35px 35px 0px;
 }
 
 table.dbkit-table tr.bg-Green td:nth-child(2)  {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 35px 0 0 35px;
     padding: 0 0 0 30px !important;
 }
 table.dbkit-table tr.bg-Green td:last-child {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 0px 35px 35px 0px;
 }
 
 table.dbkit-table tr.bg-Red td:nth-child(2)  {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 35px 0 0 35px;
     padding: 0 0 0 30px !important;
 }
 table.dbkit-table tr.bg-Red td:last-child {
-    box-shadow: 0px 3px 6px #00000029;
     border-radius: 0px 35px 35px 0px;
 }
 
@@ -1289,8 +1282,8 @@ table.dbkit-table tr th {
     padding: 1.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
-    min-width: 120px;
-    width: 100%;
+    min-width: max-content;
+    width: max-content;
 }
 
 
@@ -1310,14 +1303,14 @@ table.dbkit-table .Icon {
 }
 table.dbkit-table .Icon img {
     position: absolute;
-    right: 25%;
+    right: 30%;
     height: 21px;
     width: 20px;
 
 }
 table.dbkit-table .Icon.RightSpace img {
     position: absolute;
-    right: 15%;
+    right: 20%;
     height: 21px;
     width: 20px;
 }
@@ -3420,7 +3413,7 @@ table.dataTable thead td {
     -webkit-background-size: cover;
     height: 100%;
     width: 100%;
-    background-position: top center;
+    background-position: right center;
     background-repeat: no-repeat;
 }
 .check-circle.mb-5 img {

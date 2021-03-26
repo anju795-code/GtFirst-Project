@@ -16,7 +16,7 @@
     /*================================
     sidebar collapsing
     ==================================*/
-    if (window.innerWidth <= 1364) {
+    if (window.innerWidth <= 787) {
         $('.page-container').addClass('sbar_collapsed');
     }
     $('.nav-btn').on('click', function() {
