@@ -3,6 +3,10 @@
 /*------------------------- 1. Core Css -------------------*/
 
 
+.container {
+    padding-bottom: 120px
+}
+
 /* landing page */
 .front-page {
     width: 100%;
@@ -120,13 +124,17 @@
 }
 
 .main-content-inner {
-    padding: 0 0px 50px;
+    padding: 50px 0;
 }
 .main-content-inner .card {
     background: #F3F3F3 ;
 }
 .main-content-inner .card-body {
    padding: 0;
+}
+
+section.Mainsection {
+    padding: 60px 0;
 }
 /*------------------------- END Core Css -------------------*/
 
@@ -152,17 +160,18 @@
 }
 
 .main-menu {
+ 
+    position: relative;
+    height: calc(100% - 100px);
+    overflow: hidden;
+    padding: 20px 10px 0 0;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    position: relative;
-    height: calc(100vh - 75px);
-    overflow: auto;
-    /* width: 260px; */
-    z-index: 4;
     padding: 0px 0 100px;
 }
+
 .sidebar-footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -227,8 +236,8 @@
 }
 
 .slimScrollBar {
-    background: #fff!important;
-    opacity: 0.1!important;
+    background: #000000!important;
+    opacity: 1!important;
 }
 a.simple-text.logo-mini {
     background: #529b95;
@@ -1832,19 +1841,32 @@ h6.buttons-title {
     width: 537px;
     max-width: 100%;
 }
-.default-btn button:hover {
+/* .default-btn button:hover {
     background: #163458;
     color: #FFFFFF ;
-    }
+    } */
 
-.default-btn button:hover::after{
+/* .default-btn button:hover::after{
     background-image: url(../images/ArrowDown.png) !important;
-    }
+    } */
  .default-btn .dropdown.show  button{
     background: #163458;
     color: #FFFFFF ;
 }
-
+.AgFirst-default .default-btn .dropdown-menu {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 23px;
+    width: 518px;
+    border: none;
+    z-index: 0;
+    margin: -7px 0px 0 12px;
+    padding: 20px;
+    transform: translate3d(0px, -4px, 0px) !important;
+    will-change: unset !important;
+    position: absolute !important;
+    top: 100% !important;
+}
 .default-btn button {
     width: 100%;
     margin-top: 20px;
@@ -1884,6 +1906,7 @@ h6.buttons-title {
     background-image: url(../images/ArrowUp.png);
     border: none;
     margin: 0;
+    cursor: pointer;
 }
 
 .AgFirst-default .default-btn .dropdown.show .dropdown-toggle::after {
@@ -1914,6 +1937,119 @@ h6.buttons-title {
     box-shadow:none !important;
 }
 /*-------------------- END Make New Caculation ------------------- */
+
+
+/*-------------------- STAR Long Term ------------------- */
+.TodaysDate p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.TodaysDate input#startDate {
+    padding: 22px 15px !important;
+    border: none !important;
+    box-sizing: border-box;
+    color: #000000 !important;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    width: max-content;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 38px !important;
+    text-align: center;
+    font-weight: 500;
+}
+
+.TodaysDate {
+    margin-bottom: 50px;
+}
+.section-header-breadcrumb {
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 0 -65px;
+    padding: 10px 79px;
+}
+.section-header-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 22px;
+    top: 5px;
+    right: 36px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../images/Arrow.svg);
+}
+
+.section-header-breadcrumb .breadcrumb-item  {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 70px;
+}
+
+.LongTerm-Content {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000047;
+    border-radius: 60px;
+    padding: 60px;
+}
+.Average-body {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+.Average-body h6 {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+}
+.Average-Content h4{
+    color: #212121;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 17px;
+    border-bottom: 3px solid;
+    margin-bottom: 30px;
+    width: max-content;
+    padding: 0 0 10px;
+}
+
+.Average-Content .badge-danger {
+    background: #163458;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
+
+/*-------------------- END Long Term ------------------- */
+
 
 /*-------------------- 2.9 Letest Post ------------------- */
 
@@ -3278,7 +3414,7 @@ table.dataTable thead td {
  
 }
 .lrBg {
-    background-image: url(../images/banner-overlay.j);
+    background-image: url(../images/banner-overlay.jpg);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
