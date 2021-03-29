@@ -45,7 +45,9 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+svg {
+    width: 100%;
+}
 /*custome css*/
 
 /*--------------------------

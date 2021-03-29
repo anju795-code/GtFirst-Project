@@ -28,9 +28,12 @@
     ==================================*/
     var e = function() {
         var e = (window.innerHeight > 0 ? window.innerHeight : this.screen.height) - 5;
-        (e -= 67) < 1 && (e = 1), e > 67 && $(".main-content").css("min-height", e + "px")
+        (e -= 67) < 1 && (e = 1), e > 67 && $(".main-content, .ScrollHeight").css("min-height", e + "px")
     };
     $(window).ready(e), $(window).on("resize", e);
+
+
+
 
     /*================================
     sidebar menu
@@ -43,17 +46,66 @@
     $('.menu-inner').slimScroll({
         height: 'auto'
     });
-    $('.nofity-list').slimScroll({
-        height: '435px'
+
+    $('').slimScroll({
+        height: 'auto',
+        width: '300px',
+        axis: 'y'
     });
-    $('.timeline-area').slimScroll({
-        height: '500px'
+
+    if($(".SlimScrollTop").length) {
+        $(".SlimScrollTop").niceScroll({
+            cursorwidth: '20px',
+            autohidemode:  false,
+            zindex: 999,
+            cursorcolor: "#026C64",
+            cursorborderradius: "20px",
+            cursorborder: "1px solid #026C64",
+            background: "#E1E1E1",
+            
+          railpadding: {
+           top: 20,
+           right: 0,
+           left: 0,
+           bottom:0,
+           
+         },
+       
+        });
+         
+      }
+
+      if($(".SlimScrollBottom").length) {
+        $(".SlimScrollBottom").niceScroll({
+         cursorwidth: '20px',
+         autohidemode:  false,
+         zindex: 999,
+         cursorcolor: "#026C64",
+         cursorborder: "1px solid #026C64",
+         cursorborderradius: "20px",
+         background: "#E1E1E1",
+         
+       railpadding: {
+        top: 30,
+        right: 0,
+        left: 0,
+        bottom:0,
+        
+      },
+    
+     });
+      }
+
+
+      $(".SlimScrollTop").scroll(function(){
+        $(".SlimScrollBottom")
+            .scrollLeft($(".SlimScrollTop").scrollLeft());
+            $(this).addClass('dlfhsldhflsdfhlsdh');
     });
-    $('.recent-activity').slimScroll({
-        height: 'calc(100vh - 114px)'
-    });
-    $('.settings-list').slimScroll({
-        height: 'calc(100vh - 158px)'
+    $(".SlimScrollBottom").scroll(function(){
+        $(".SlimScrollTop")
+            .scrollLeft($(".SlimScrollBottom").scrollLeft());
+          
     });
 
     /*================================

@@ -122,7 +122,11 @@
     background: #F3F3F3 ;
     padding: 0 50px;
 }
-
+.Main2-content {
+    width: 100%;
+    background: #F3F3F3 ;
+    padding: 0 50px;
+}
 .main-content-inner {
     padding: 50px 0;
 }
@@ -133,9 +137,6 @@
    padding: 0;
 }
 
-section.Mainsection {
-    padding: 60px 0;
-}
 /*------------------------- END Core Css -------------------*/
 
 
@@ -1940,7 +1941,7 @@ h6.buttons-title {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: .375rem .75rem;
+    padding: .375rem 0;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 500;
@@ -1948,7 +1949,9 @@ h6.buttons-title {
     color: #000000;
     text-align: center;
     white-space: nowrap;
+    margin-right: 20px;
 }
+
 
 .TodaysDate input#startDate {
     padding: 22px 15px !important;
@@ -1977,8 +1980,8 @@ h6.buttons-title {
     align-items: center;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000029;
-    margin: 0 -65px;
-    padding: 10px 79px;
+    margin: 0 -65px 40px;
+    padding: 10px 100px;
 }
 .section-header-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
     display: inline-block;
@@ -2000,16 +2003,39 @@ h6.buttons-title {
     font-weight: 500;
     margin-right: 70px;
 }
+section.Mainsection {
+    padding: 60px 0px;
+}
+
+.LongTerm-Content2 {
+    width: 2000px;
+    height: 20px;
+}
 
 .LongTerm-Content {
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000047;
     border-radius: 60px;
     padding: 60px;
+    width: max-content;
+    white-space: nowrap
+}
+.SlimScrollBottom{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;   
+    padding: 0 60px 60px;
+
+}
+
+.SlimScrollTop {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;   
+    padding: 0 60px;
 }
 .Average-body {
     width: 100%;
-    display: inline-block;
     padding: 10px 0;
 }
 .Average-body h6 {
@@ -2039,11 +2065,333 @@ h6.buttons-title {
     padding: 10px 20px;
 }
 
+.PriceTable {
+    background: #F5F5F5;
+    border-radius: 60px;
+    padding: 25px;
+    display: block;
+    width: 100%;
 
+}
+
+.PriceTable .table thead th {
+    vertical-align: top;
+    border-bottom: none;
+    padding: 20px 0  10px!important;
+}
+
+.PriceTable  table tr th, .PriceTable table tr td {
+    border-top: none !important;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13) !important;
+    padding: 20px 0 !important;
+}
+.PriceTable  table p{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.PriceTable  table th, .PriceTable  table td{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+.PriceTable  table th small, .PriceTable  table td small {
+    color: #8E8E8E;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+
+.PriceTable table tr th.Price {
+    min-width: 600px;
+}
+.PriceTable table tr th.MonthName {
+    min-width: 80px;
+}
+div#ascrail2000-hr {
+
+    height: 30px !important;
+
+
+}
+
+.nicescroll-cursors {
+    top: 5px !important;
+}
 
 /*-------------------- END Long Term ------------------- */
 
 
+/*-------------------- START Current Season Analysis - Customised ------------------- */
+.CustomisedDiv {
+    margin-bottom: 50px;
+}
+
+.CustomisedDiv.CustomisedAligment {
+    margin-top: 41px;
+}
+.CustomisedDiv input{
+    padding: 12px 4px !important;
+    border: none !important;
+    box-sizing: border-box;
+    color: #000000 !important;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    width: 197px;
+    position: relative;
+    background: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 38px;
+}
+.CustomisedDiv input.CustomisationName {
+    padding: 12px 40px !important;
+    border: none !important;
+    box-sizing: border-box;
+    color: #000000 !important;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 29px;
+}
+.CustomisedDiv h6 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+}
+.CustomisedDiv  p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.CustomisedDiv a {
+    padding: 7px 4px !important;
+    border: none !important;
+    box-sizing: border-box;
+    color: #000000 !important;
+    font-size: 25px !important;
+    letter-spacing: 1px;
+    width: 197px;
+    position: relative;
+    background: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 38px;
+}
+.CustomisedDiv input::-webkit-input-placeholder {
+    color: #e1e1e1;
+}
+
+.CustomisedDiv input::-moz-placeholder {
+    color: #e1e1e1;
+}
+
+.CustomisedDiv input:-ms-input-placeholder {
+    color: #e1e1e1;
+}
+
+
+.CurrentMarket-btn button {
+    width: 100%;
+    margin-top: 20px;
+    height: 61px;
+    font-weight: 500;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 42px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 0 30px;
+    background: #026C64;
+}
+.CurrentMarket-btn button:hover {
+    background: #026C64;
+    color: #FFFFFF;
+}
+
+
+
+
+/*-------------------- 24. Pricing ------------------- */
+
+.pricing-list {
+    text-align: center;
+}
+.prc-head  {
+    background: #026C64;
+      border-radius: 30px 30px 0px 0px;
+      padding: 28px;
+}
+.prc-head h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.prc-head a {
+    background: #163458;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: 20px;
+}
+.prc-list {
+    padding: 50px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.prc-list p.loss {
+    color: #FF0200;;
+
+}
+
+.prc-list p {
+   font-size: 35px;
+    font-weight: 500;
+    color: #000000;
+}
+.prc-list p sub{
+    font-size: 18px;
+}
+.customiseMarket {
+    margin-bottom: 60px;
+}
+.embedded-daterangepicker .daterangepicker::before,
+.embedded-daterangepicker .daterangepicker::after {
+  display: none;
+}
+.embedded-daterangepicker .daterangepicker {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    float: left;
+    margin-top: 0;
+    padding: 10px 30px;
+}
+.embedded-daterangepicker .daterangepicker .drp-calendar {
+  width: 50%;
+  max-width: 50%;
+}
+.daterangepicker .calendar-table th {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 32px;
+    width: max-content;
+    height: auto;
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #BEBEBE;
+    padding: 15px;
+}
+
+.daterangepicker .calendar-table th.month {
+    color: #1D2634 !important;
+    font-size: 20px !important;
+}
+ .daterangepicker .calendar-table td {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #1D2634;
+    padding: 15px;
+    transition: transform .2s;
+}
+
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+    color: #1D2634 !important;
+    background: #E6F2FF;
+    border-radius: 50px !important;
+    font-size: 14px !important;
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9);
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    color: #fff !important;
+    background: #163458;
+    border-radius: 50px !important;
+    font-size: 14px !important;
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9);
+    
+}
+
+button.cancelBtn.btn.btn-sm.btn-default {
+    display: none;
+}
+.daterangepicker .drp-buttons .btn {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    background: #163458;
+    box-shadow: 0px 2px 4px #0000001a;
+    border-radius: 8px;
+    border: none !important;
+    width: 62px;
+    height: 32px;
+}
+.daterangepicker .drp-buttons {
+    clear: both;
+    text-align: right;
+    padding: 8px 0px 15px;
+    border-top: none !important;
+}
+
+/*-------------------- END Pricing ------------------- */
 /*-------------------- 2.9 Letest Post ------------------- */
 
 .single-post {
@@ -3164,7 +3512,7 @@ label {
 
 
 /*-------------------- 19. Table Basic ------------------- */
-
+/* 
 .single-table .table {
     margin-bottom: 0;
 }
@@ -3194,7 +3542,7 @@ table tr td [class^="ti-"] {
     display: inline-block;
     text-transform: capitalize;
     vertical-align: middle;
-}
+} */
 
 /*-------------------- END Table Basic ------------------- */
 
@@ -3691,66 +4039,6 @@ table.dataTable thead td {
 }
 /*-------------------- END Login ------------------- */
 
-
-/*-------------------- 24. Pricing ------------------- */
-
-.pricing-list {
-    text-align: center;
-}
-
-.prc-head h4 {
-    background: #805ff5;
-    color: #fff;
-    padding: 28px;
-    letter-spacing: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-.prc-list {
-    padding: 30px;
-}
-
-.prc-list li a {
-    display: block;
-    font-size: 15px;
-    letter-spacing: 0;
-    margin: 23px 0;
-    color: #6d6969;
-}
-
-.prc-list li.bold {
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-.prc-list>a {
-    display: inline-block;
-    margin-top: 40px;
-    background: #805ff5;
-    color: #fff;
-    padding: 11px 20px;
-    border-radius: 40px;
-}
-
-.prc-list>a:hover {
-    box-shadow: 0 3px 25px rgba(44, 113, 218, 0.38);
-}
-
-.dark-pricing .prc-head h4 {
-    background: #3e3b3b;
-    color: #fff;
-}
-
-.dark-pricing .prc-list>a {
-    background: #3e3b3b;
-}
-
-.dark-pricing .prc-list>a:hover {
-    box-shadow: 0 3px 25px rgba(27, 27, 27, 0.38);
-}
-
-/*-------------------- END Pricing ------------------- */
 
 
 /*-------------------- 25. 404 Page ------------------- */
