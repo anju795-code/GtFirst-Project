@@ -7,11 +7,27 @@
     .container {
         max-width: 1600px;
     }
+    .prc-head h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.page-title {
+    font-size: 36px;
+}
 }
 
 /*Medium Desktop Device*/
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .prc-head h4 {
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .page-title {
+        font-size: 36px;
+    }
     .col-ml-6 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -115,6 +131,7 @@
     .container {
         max-width: 1600px;
     }
+    
 }
 
 /* Normal desktop :992px. */
@@ -143,8 +160,8 @@
     .sbar_collapsed .nav-btn {
         position: initial;
         background: none;
-        padding: 0;
-        margin: 10px 30px 0 0;
+        padding: 12px 0;
+        margin: 0px 30px 0 0;
     }
     .sbar_collapsed .nav-btn span {
         background: #026C64;
@@ -173,11 +190,28 @@
     }
     
 }
-@media (min-width: 1200px){
 
-
-}
 @media (min-width: 992px) and (max-width: 1199px) {
+    .prc-head h4 {
+
+        font-size: 20px;
+    }
+    .page-title {
+        font-size: 35px;
+    }
+
+    .section-header-breadcrumb .breadcrumb-item {
+        margin-right: 50px;
+    }
+    
+    .CustomisedDiv a {
+    width: 175px
+    }
+
+    .CustomisedDiv input{
+    width: 175px   
+    }
+
     /* dashboard one */
     .mt-md-30 {
         margin-top: 30px;
@@ -304,6 +338,14 @@
     .sidebar-menu {
         width: 306px;
     }
+
+    .CustomisedDiv a {
+        width: 175px
+        }
+    
+        .CustomisedDiv input{
+        width: 175px   
+        }
     .nav-btn {
         position: fixed;
         z-index: 99;
@@ -396,24 +438,9 @@
         height: 70px;
         line-height: 70px;
     }
-    /* icons */
-    .icon-container {
-        flex-basis: calc(100% * (1/3));
-    }
+  
 
-    /* maps */
-    #mapamchart1,
-    #mapamchart2,
-    #mapamchart3,
-    #mapamchart4,
-    #mapamchart5,
-    #mapamchart6 {
-        height: 300px;
-    }
-    #google_map {
-        height: 400px;
-    }
-
+  
     /* login page */
     .ptb--100 {
         padding: 90px 0;
@@ -421,6 +448,10 @@
     /* horizontal header dashboard */
     .header-bottom .search-box input {
         max-width: 100%;
+    }
+    .prc-head h4 {
+
+        font-size: 19px;
     }
 }
 
@@ -430,12 +461,74 @@
     .ptb--100 {
         padding: 90px 0;
     }
+    .section-header-breadcrumb  ul {
+        width: 1100px;
+    }
+    .section-header-breadcrumb {
+        overflow: hidden;
+        overflow-x: auto;
+        margin: 0 -65px 35px;
+        padding: 10px 0px;
+    }
+    .embedded-daterangepicker .daterangepicker {
+        width: auto;
+    }
+    .prc-head h4 {
+
+        font-size: 20px;
+    }
+    .page-title {
+        font-size: 20px;
+    }
+    .metismenu li a {
+        font-size: 20px;
+    }
+    .logo a {
+        font-size: 27px;
+    }
+    .mainMenu a {
+        font-size: 22px;
+    }
+
+    .sidebar-footer li a {
+        font-size: 20px;
+    }
 }
 
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .Saved-Customisations .card-link {
+        font-size: 15px;
+        padding: 0.8rem 1rem;;
+      }
+      .ShortBy .btn-light.dropdown-toggle {
+        width: 125px;
+    }
+    .metismenu li a {
+        font-size: 20px;
+    }
+    .logo a {
+        font-size: 27px;
+    }
+    .mainMenu a {
+        font-size: 22px;
+    }
+
+    .sidebar-footer li a {
+        font-size: 20px;
+    }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .AgFirst-default .default-btn .dropdown-menu {
+        width: 100%;
+        margin: -3px 0px 0 2px;
+    }
     /* dashboard one */
+    .CustomisedDiv.CustomisedAligment {
+        margin-top: 0px;
+    }
     .mb-xs-30 {
         margin-bottom: 30px;
     }
@@ -559,6 +652,42 @@
 /* small mobile :320px. */
 
 @media (min-width: 240px) and (max-width: 479px) {
+    .db-table tr td:last-child .dbText {
+        margin: 15px 0px 0 0;
+    }
+    .db-table .dbText img {
+        position: absolute;
+        right: -5%;
+        top: 36%;
+        height: 14px;
+        width: 14px;
+        z-index: 1;
+    }
+    .ShortBy .btn-light.dropdown-toggle {
+        width: 200px;
+        padding: 11px 0 11px 0;
+    }
+    .Saved-Customisations .card-link {
+        font-size: 13px;
+        padding: 0.7rem 1rem;
+    }
+    .embedded-daterangepicker .daterangepicker {
+        width: 100%;
+    }
+    .customiseMarket {
+        margin-bottom: 44px;
+    }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .AgFirst-default .default-btn .dropdown-menu {
+        width: 100%;
+        margin: -3px 0px 0 2px;
+    }
+    .NewSelection-btn button {
+        height: 50px;
+        font-size: 18px;
+    }
     /* dashboard one */
     /* sidebar */
     .sidebar-menu {
@@ -583,7 +712,7 @@
         position: initial;
         background: none;
         padding: 0;
-        margin: 10px 30px 0 0;
+        margin: 0px 30px 0 0;
     }
     .sbar_collapsed .nav-btn span {
         background: #026C64;

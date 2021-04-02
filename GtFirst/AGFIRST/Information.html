@@ -57,7 +57,7 @@
                                 <a href="make-new-calculation.html" ><img src="assets/images/Calulater.svg"><span>Make New Calculation</span></a>
                             </li>
                             <li>
-                                <a href="dashbaord.html" ><img src="assets/images/History.svg"><span>Selection History</span></a>
+                                <a href="SelectionHistory.html" ><img src="assets/images/History.svg"><span>Selection History</span></a>
                             </li>
                            
                             <li>
@@ -67,14 +67,14 @@
                                 <a href="Information.html"><img src="assets/images/Information.svg"><span>Information</span></a>
                             </li>
                             <li>
-                                <a href="invoice.html"><img src="assets/images/Settings.svg"><span>Settings</span></a>
+                                <a href="settings.html"><img src="assets/images/Settings.svg"><span>Settings</span></a>
                             </li>
-                            <li class="active-pro">
-                                <a href="./upgrade.html"><img src="assets/images/LogOut.svg"><span>Logout</span></a>
-                            </li>
+                      
 
                         </ul>
+                        <a class="logout-button" href="index.html"><img src="assets/images/LogOut.svg">Logout</a>
                     </nav>
+                   
                 </div>
             </div>
         </div>
@@ -82,222 +82,184 @@
         <!-- main content area start -->
         <div class="main-content">
              <!-- page title area start -->
-             <div class="page-title-area">
-                <div class="page-breadcrumb">
-                    <div class="row">
-                             <div class="col-md-5 align-self-center">
-                                 <h4 class="page-title mb-0">Information</h4>
-                            </div>
-                             <div class="col-md-7 justify-content-end align-self-center d-none d-md-flex">
-                                 <div class="d-flex right-section">
-                                     <div class="BackButton"><a href="dashbaord.html"><img src="assets/images/BackButton.png"></a></div>
- 
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-             </div>
-            <!-- page title area end -->
-            <div class="main-content-inner">
-                <div class="row">
-                    <div class="col-lg-6">
+                     <div class="page-breadcrumb">
                         <div class="row">
-                            <div class="col-12 mt-5">
-                                <div class="InformationText">
-                                        <h4 class="header-title">
-                                            Purpose of the APP
-                                     </h4>
-                                    
+                                <div class="col-9 align-self-center">
+                                 <div class="nav-btn pull-left">
+                                     <span></span>
+                                     <span></span>
+                                     <span></span>
+                                 </div> <h4 class="page-title mb-0">Information</h4>
+                               </div>
+                                <div class="col-3 justify-content-end  d-flex">
+                                    <div class="d-flex right-section">
+                                        <div class="BackButton"><a href="make-new-calculation.html"><img src="assets/images/BackButton.png"></a></div>
+    
+                                    </div>
+                                </div>
                             </div>
-                          
                         </div>
-                    </div>
-            
-                </div>
-                </div>
+                       <!-- Heading area end -->
+            <!-- page title area end -->
+            <div class="main-content-inner InformationContent">
+                <div class="row">
+                    <div class="col-lg-12">
+                                <div class="InformationText">
+                                     <h4 class="title">
+                                            Purpose of the APP
+                                        </h4>
+                                     <p>- Forecasting seasonality of meat prices over the year</p>
+                                      <p>- Forecasting store stock prices as a % of the monthly meat price. We call this relativity</p>
+                                     <p>AgFirst has collected meat and store price data since 1995. In calculating the long-term average we have placed a 
+                                            heavier weighting on more recent years and reduced influence of older data.
+                                     </p>
+                                </div>
 
+                            <div class="InformationText">
+                                <h4 class="title">Meat prices 
+                               </h4>
+                               <p>All meat schedule prices are quoted as gross schedule i.e. before levies are deducted.
+                                The indicator prices used include</p>
+                                <div class="table-responsive">
+                                <table class="table table-Meat-prices ">
+                                <tbody>
+                                 <tr>
+                                   <th>- Lamb</th>
+                                   <td>-  17 kg PM lamb</td>
+                                 </tr>
+                                <tr>
+                                  <th>- Mutton</th>
+                                  <td>-   24 Kg </td>
+                                </tr>
+                                <tr>
+                                  <th>- Bull & Steer </th>
+                                  <td>- 295 to 320 kg </td>
+                                </tr>
+                                <tr>
+                                  <th>- Heifer </th>
+                                  <td>- 220 to 240 kg  Local trade </td>
+                                </tr>
+                                <tr>
+                                  <th>- Manufacturing Cow</th>
+                                  <td>- 220 kgs plus</td>
+                                </tr>
+                                <tr>
+                                  <th>- Venison</th>
+                                  <td>-  60 kg stag</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                         <p>The time period presented are meat company seasons from 1 October through to 30 September.</p>
+                         </div>
+                        </div>
+                        <div class="InformationText">
+                            <h4 class="title">
+                                Store Stock
+                             </h4>
+                             <p>1. Store stock are quoted as Paddock price i.e. before commission and freight deducted. 
+                               </p>
+                             <p> 2. Indicator weight varies slightly through the year but lambs are typically between 28 and 32 kg. 
+                            </p>
+                        </div>
+
+                        <div class="InformationText">
+                            <h4 class="title">
+                                Sheep Classes
+                             </h4>
+                             <p>- Ram lambs (including cryptorchid )</p>
+                               <p> - Wether lambs</p>
+                                <p>- Ewe lambs</p>
+                                <p>If mixed sex or unspecified we assume wether lambs  </p>
+                          <p>2 tooth and 5 year old ewes are quoted for the Dec to March period only </p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Beef
+                         </h4>
+                         <p>Store prices are collected on steers, heifers and the bulls for rising one year, rising two-year and rising 3 year. </p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Deer
+                         </h4>
+                         <p>Store data collected for </p>
+                           <p> - Weaner Stags</p>
+                           <p> - Weaner Hinds</p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Age Definitions
+                         </h4>
+                         <p>Each year of birth will change each year on the 1st October.</p>
+                            <p>Descriptions for the current year cattle and deer are:</p>
+                           <p>-  R1 = Born 2020</p>
+                           <p>-  R2 = Born 2019</p>
+                           <p>-  R3 = Born 2018</p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Traffic Light Colour Coding
+                            <small>For a Buyer:</small>
+                         </h4>
+                         <p>When current prices are in the top quartile they would be identified in red and described as expensive.</p>
+                            <p>When current prices are in the 2 middle quartiles then they would be identified as orange and described as average.
+                            </p>
+                           <p>When current prices are in the bottom quartile then they would be identified as green and described as good buying.
+                        </p>
+                           <p>Inverse colours would be used for a seller
+                        </p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Comparison of Paddock Price to Sale Yard Price
+                         </h4>
+                         <p>
+                             We would typically expect that the same line of Livestock will be reported as heavier when being sold on a paddock 
+                            price basis as compared to their saleyard live weight. This is because of the greater level of emptying out created by 
+                            the transport to and waiting times within saleyards. Consequently saleyards prices per kg may be higher than the 
+                            paddock price.
+                        </p>
+                     </div>
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Costs beyond Paddock Price
+                         </h4>
+                         <p>
+                             Purchasers will need to add freight to their calculation of the cost of landing stock home. Sellers will need to deduct 
+                            sales costs which may include commission, and if selling to saleyards then also deduct freight and Yard fees to obtain 
+                            a net sales value.                            
+                        </p>
+                     </div>
+
+                     <div class="InformationText">
+                        <h4 class="title">
+                            Disclaimer 
+                         </h4>
+                         <p>
+                             AgFirst Pastoral HB Ltd have prepared the forecasting tools based on historic information. These are a guideline to 
+                            future prices only and clients need to make their own assessment of expected meat and store stock prices. AgFirst 
+                            cannot accept any liability for any loss or damage which may result in action or failures to act based on this 
+                            information.                            
+                        </p>
+                     </div>
+
+                     <div class="InformationText text-center">
+                        <img src="assets/images/AgFirst-logo.svg">
+                     </div>
+                 </div>
+                </div>
+            </div>
      </div>
         <!-- main content area end -->
    
     </div>
     <!-- page container area end -->
-    <!-- offset area start -->
-    <div class="offset-area">
-        <div class="offset-close"><i class="ti-close"></i></div>
-        <ul class="nav offset-menu-tab">
-            <li><a class="active" data-toggle="tab" href="#activity">Activity</a></li>
-            <li><a data-toggle="tab" href="#settings">Settings</a></li>
-        </ul>
-        <div class="offset-content tab-content">
-            <div id="activity" class="tab-pane fade in show active">
-                <div class="recent-activity">
-                    <div class="timeline-task">
-                        <div class="icon bg1">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Rashed sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg2">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Added</h4>
-                            <span class="time"><i class="ti-time"></i>7 Minutes Ago</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg2">
-                            <i class="fa fa-exclamation-triangle"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>You missed you Password!</h4>
-                            <span class="time"><i class="ti-time"></i>09:20 Am</span>
-                        </div>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg3">
-                            <i class="fa fa-bomb"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Member waiting for you Attention</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg3">
-                            <i class="ti-signal"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>You Added Kaji Patha few minutes ago</h4>
-                            <span class="time"><i class="ti-time"></i>01 minutes ago</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg1">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Ratul Hamba sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Hello sir , where are you, i am egerly waiting for you.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg2">
-                            <i class="fa fa-exclamation-triangle"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Rashed sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg2">
-                            <i class="fa fa-exclamation-triangle"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Rashed sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg3">
-                            <i class="fa fa-bomb"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Rashed sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                    <div class="timeline-task">
-                        <div class="icon bg3">
-                            <i class="ti-signal"></i>
-                        </div>
-                        <div class="tm-title">
-                            <h4>Rashed sent you an email</h4>
-                            <span class="time"><i class="ti-time"></i>09:35</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="settings" class="tab-pane fade">
-                <div class="offset-settings">
-                    <h4>General Settings</h4>
-                    <div class="settings-list">
-                        <div class="s-settings">
-                            <div class="s-sw-title">
-                                <h5>Notifications</h5>
-                                <div class="s-swtich">
-                                    <input type="checkbox" id="switch1" />
-                                    <label for="switch1">Toggle</label>
-                                </div>
-                            </div>
-                            <p>Keep it 'On' When you want to get all the notification.</p>
-                        </div>
-                        <div class="s-settings">
-                            <div class="s-sw-title">
-                                <h5>Show recent activity</h5>
-                                <div class="s-swtich">
-                                    <input type="checkbox" id="switch2" />
-                                    <label for="switch2">Toggle</label>
-                                </div>
-                            </div>
-                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                        </div>
-                        <div class="s-settings">
-                            <div class="s-sw-title">
-                                <h5>Show your emails</h5>
-                                <div class="s-swtich">
-                                    <input type="checkbox" id="switch3" />
-                                    <label for="switch3">Toggle</label>
-                                </div>
-                            </div>
-                            <p>Show email so that easily find you.</p>
-                        </div>
-                        <div class="s-settings">
-                            <div class="s-sw-title">
-                                <h5>Show Task statistics</h5>
-                                <div class="s-swtich">
-                                    <input type="checkbox" id="switch4" />
-                                    <label for="switch4">Toggle</label>
-                                </div>
-                            </div>
-                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                        </div>
-                        <div class="s-settings">
-                            <div class="s-sw-title">
-                                <h5>Notifications</h5>
-                                <div class="s-swtich">
-                                    <input type="checkbox" id="switch5" />
-                                    <label for="switch5">Toggle</label>
-                                </div>
-                            </div>
-                            <p>Use checkboxes when looking for yes or no answers.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!-- offset area end -->
     <!-- jquery latest version -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>

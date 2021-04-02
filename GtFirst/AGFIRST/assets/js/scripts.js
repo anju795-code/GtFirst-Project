@@ -13,6 +13,7 @@
         }, 300)
     });
 
+
     /*================================
     sidebar collapsing
     ==================================*/
@@ -33,7 +34,37 @@
     $(window).ready(e), $(window).on("resize", e);
 
 
+// Datepicker
+// init daterangepicker 
+$(document).ready(function() {
+    var picker = $('#daterangepicker1').daterangepicker({
+      "parentEl": "#daterangepicker1-container",
+      "singleDatePicker": true,
+            locale: {
+                    applyLabel: 'Done',
+                    customRangeLabel: 'Custom Range',
+                   
+                 },
+    
+        });
+        
+        // Datepicker2
+        
+        $('#startDate').daterangepicker({
+            singleDatePicker: true,
+            locale: {
+                applyLabel: 'Done',
+             },
 
+           startDate: moment()
+          });
+
+
+    // prevent hide after range selection
+     picker.data('daterangepicker').hide = function () {};
+    // show picker on load
+      picker.data('daterangepicker').show();  
+    });
 
     /*================================
     sidebar menu
@@ -44,7 +75,7 @@
     slimscroll activation
     ==================================*/
     $('.menu-inner').slimScroll({
-        height: 'auto'
+        height: 'auto',
     });
 
     $('').slimScroll({
@@ -57,18 +88,18 @@
         $(".SlimScrollTop").niceScroll({
             cursorwidth: '20px',
             autohidemode:  false,
-            zindex: 999,
+            zindex: 9,
             cursorcolor: "#026C64",
             cursorborderradius: "20px",
             cursorborder: "1px solid #026C64",
             background: "#E1E1E1",
+        
             
           railpadding: {
            top: 20,
            right: 0,
            left: 0,
-           bottom:0,
-           
+           bottom:0,           
          },
        
         });
@@ -79,14 +110,34 @@
         $(".SlimScrollBottom").niceScroll({
          cursorwidth: '20px',
          autohidemode:  false,
-         zindex: 999,
+         zindex: 9,
          cursorcolor: "#026C64",
          cursorborder: "1px solid #026C64",
          cursorborderradius: "20px",
          background: "#E1E1E1",
          
        railpadding: {
-        top: 30,
+        right: 0,
+        left: 0,
+        bottom:30,
+        
+      },
+    
+     });
+      }
+
+      if($(".CarcassPriceScrollBottom").length) {
+        $(".CarcassPriceScrollBottom").niceScroll({
+         cursorwidth: '20px',
+         autohidemode:  false,
+         zindex: 9,
+         cursorcolor: "#026C64",
+         cursorborder: "1px solid #026C64",
+         cursorborderradius: "20px",
+         background: "#E1E1E1",
+         
+       railpadding: {
+           top:30,
         right: 0,
         left: 0,
         bottom:0,
@@ -96,15 +147,26 @@
      });
       }
 
+    //   swich button
 
+      $( "#togBtn" ).click(function() {
+        $( "#Estimated" ).toggle();
+        });
+
+// scroll letf right
       $(".SlimScrollTop").scroll(function(){
-        $(".SlimScrollBottom")
+        $(".SlimScrollBottom, .CarcassPriceScrollBottom")
             .scrollLeft($(".SlimScrollTop").scrollLeft());
-            $(this).addClass('dlfhsldhflsdfhlsdh');
     });
     $(".SlimScrollBottom").scroll(function(){
         $(".SlimScrollTop")
             .scrollLeft($(".SlimScrollBottom").scrollLeft());
+          
+    });
+
+    $(".CarcassPriceScrollBottom").scroll(function(){
+        $(".SlimScrollTop")
+            .scrollLeft($(".CarcassPriceScrollBottom").scrollLeft());
           
     });
 

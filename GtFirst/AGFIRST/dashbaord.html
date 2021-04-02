@@ -51,13 +51,13 @@
                     <nav>
                         <ul class="metismenu" id="menu">
                          <li class="active">
-                                <a href="index.html" ><img src="assets/images/home.svg"><span>Home</span></a>
+                                <a href="dashbaord.html" ><img src="assets/images/home.svg"><span>Home</span></a>
                             </li>
                             <li>
                                 <a href="make-new-calculation.html" ><img src="assets/images/Calulater.svg"><span>Make New Calculation</span></a>
                             </li>
                             <li>
-                                <a href="index.html" ><img src="assets/images/History.svg"><span>Selection History</span></a>
+                                <a href="SelectionHistory.html" ><img src="assets/images/History.svg"><span>Selection History</span></a>
                             </li>
                            
                             <li>
@@ -67,42 +67,34 @@
                                 <a href="Information.html"><img src="assets/images/Information.svg"><span>Information</span></a>
                             </li>
                             <li>
-                                <a href="invoice.html"><img src="assets/images/Settings.svg"><span>Settings</span></a>
+                                <a href="settings.html"><img src="assets/images/Settings.svg"><span>Settings</span></a>
                             </li>
                       
 
                         </ul>
+                        <a class="logout-button" href="index.html"><img src="assets/images/LogOut.svg">Logout</a>
                     </nav>
                    
                 </div>
               
             </div>
-            <div class="sidebar-footer ">
-                <ul>
-                   <li>
-                      <a href="index.html"><img src="assets/images/LogOut.svg">Logout</a>
-                  </li>
-              </ul>
-           </div>
         </div>
         <!-- sidebar menu area end -->
         <!-- main content area start -->
     <div class="main-content">
-     
-            <!-- page title area start -->
-            <div class="page-title-area">
-                <div class="row align-items-center">
-                    <div class="col-sm-12">
-                        <div class="breadcrumbs-area clearfix">
-                            <div class="nav-btn pull-left">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div><h4 class="page-title pull-left">Home - Dashboard</h4>
-                        </div>
-                    </div>
+         <!-- Heading area start -->
+             <div class="page-breadcrumb">
+                <div class="row">
+                        <div class="col-12 align-self-center">
+                         <div class="nav-btn pull-left">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                         </div> <h4 class="page-title mb-0">Home - Dashboard</h4>
+                       </div>
+                     </div>
                 </div>
-            </div>
+               <!-- Heading area end -->
             <!-- page title area end -->
             <div class="main-content-inner">
                 <!--Saved Customisations area start -->
@@ -114,17 +106,17 @@
                      <div id="accordion1" class="according">
                          <div class="row">
                         <!-- accordion style 1 start -->
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="Collapsed-Button">
                                     <a class="card-link collapsed" data-toggle="collapse" href="#accordion11">Atkins Ranch</a>
                                   </div>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-4">
                                 <div class="Collapsed-Button ">
                                       <a class="card-link collapsed" data-toggle="collapse" href="#accordion12">Joe's Farm</a>
                                     </div>
                                  </div>
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="Collapsed-Button">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#accordion13">Tom's Stock</a>
                                     </div>
@@ -530,12 +522,11 @@
   <!-- Table area start -->
                       <div class="page-breadcrumb">
                                     <div class="row">
-                                        <div class="col-md-3 align-self-center">
+                                        <div class="col-12 col-sm-4 align-self-center">
                                             <h4 class="header-title mb-0">Selection History</h4>
                                        </div>
-                                        <div class="col-md-9 justify-content-end align-self-center d-none d-md-flex">
-                                            <div class="d-flex right-section">
-                                                <div class="ShortBy dropdown ">
+                                        <div class="col-8 col-sm-6 text-right">
+                                            <div class="ShortBy dropdown ">
                                                     <span> Sort by</span>
                                                     <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">
                                                         Latest Current Price vs Latest Long Term Average
@@ -544,85 +535,81 @@
                                                         <a class="dropdown-item" href="#">Latest Current Price vs Latest Long Term Average</a>
                                                     </div>
                                                 </div>
-                                                <button type="button" class="btn btn-rounded btn-light mb-3"><a href="full-page.html">Visit Full Page</a> </button>
+                                        </div>
+                                        <div class="col-4 col-sm-2">
+                                            <div class="right-section">
+                                            <button type="button" class="btn btn-rounded btn-light"><a href="SelectionHistory.html">Visit Full Page</a> </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-  
-                                <div class="market-status-table mt-4">
-                                    <div class="table-responsive">
-                                        <table class="  dbkit-table" >
+                                <div class="db-table table-responsive mt-5">
+                                    <table class="table text-right">
                                         <thead>
-                                         <tr class="heading-td">
-                                                <th class="mv-icon">Delete</th>
-                                                <td class="Icon">Role</td>
-                                                <td class="Icon">Purchase Location</td>
-                                                <td class="Icon">Stock</td>
-                                                <td class="Icon">Stock Type</td>
-                                                <td class="Icon">Stock Age</td>
-                                                <td class="stats-chart">Live Weight</td>
+                                            <tr class="text-capitalize heading-th">
+                                                <th class="text-center" style="width: 8%;">Delete</th>
+                                                <th class="text-center">Role</th>
+                                                <th class="text-left">Purchase Location</th>
+                                                <th class="text-left" >Stock</th>
+                                                <th class="text-left">Stock Type</th>
+                                                <th class="text-left"> Stock Age</th>
+                                                <th class="text-left">Live Weight</th>
+
                                             </tr>
-                                          </thead>
-                                            <tbody>
-                                            <tr class="bg-Green">
-                                             <th class="mv-icon" data-toggle="modal" data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></i> </th>
-                                                <td class="Icon">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon RightSpace">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="stats-chart">
-                                                    340 kg
-                                                </td>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="Row-Green">
+                                                <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                                <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                        
                                             </tr>
-                                            <tr class="bg-Orange">
-                                                <th class="mv-icon" data-toggle="modal" data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></i> </th>
-                                                <td class="Icon">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon RightSpace">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="stats-chart">
-                                                    340 kg
-                                                </td>
+                                            <tr class="Row-Orange">
+                                                <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                                <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                        
                                             </tr>
-                                            <tr class="bg-Orange">
-                                                <th class="mv-icon" data-toggle="modal" data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></i> </th>
-                                                <td class="Icon">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon RightSpace">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="stats-chart">
-                                                    340 kg
-                                                </td>
+                                            <tr class="Row-Orange">
+                                                <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                                <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                        
                                             </tr>
-                                            <tr class="bg-Orange">
-                                                <th class="mv-icon" data-toggle="modal" data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></i> </th>
-                                                <td class="Icon">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon RightSpace">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="stats-chart">
-                                                    340 kg
-                                                </td>
+                                            <tr class="Row-Orange">
+                                                <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                                <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                        
                                             </tr>
-                                            <tr class="bg-Red">
-                                                <th class="mv-icon" data-toggle="modal" data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></i> </th>
-                                                <td class="Icon">Buyer <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon RightSpace">North Island <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Cattle <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">Bull  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="Icon">R1  <img src="assets/images/Arrow.svg" alt="icon"></td>
-                                                <td class="stats-chart">
-                                                    340 kg
-                                                </td>
+                                            <tr class="Row-Red">
+                                                <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                                <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                                <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                        
                                             </tr>
-                                            <tbody>
-                                        </table>
-                                    </div>
+                                        </tbody>
+                                    </table>
                                 </div>
                       
                 <!-- Table area end -->
