@@ -3,15 +3,13 @@
     /*------------------------- 1. Core Css -------------------*/
 
 
-    .container {
+    /* .container {
         padding-bottom: 120px
-    }
+    } */
 
     /* landing page */
     .front-page {
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 190px;
         text-align: center;
     }
     .landing-buttons {
@@ -19,12 +17,19 @@
         display: inline-block;
         margin-top: 30%;
     }
-    .front-page a.button-one{
+    .landing-buttons a{
+        color: #000000;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        font-family: 'Roboto', sans-serif;
+        min-width: 340px;
+        box-shadow: 0px 3px 6px #0000007a;
         width: auto;
         height: 94px;
         line-height: 94px;
-        background: #9ED8D4 ;
-        box-shadow: 0px 3px 6px #0000007a;
+        
         border-radius: 47px;
         opacity: 1;
         margin: 0 50px 0 15px;
@@ -32,34 +37,17 @@
         display: inline-block;
         font-weight: 500;
         font-size: 44px;
-        color: #000000;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
-        font-family: 'Roboto', sans-serif;
-        min-width: 340px;
+    }
+    .front-page a.button-one{
+     
+        background: #9ED8D4 ;
+    
+      
     }
     .front-page a.button-two {
-        width: auto;
-        height: 94px;
-        line-height: 94px;
-        background: #738AA6 ;
-        box-shadow: 0px 3px 6px #0000007a;
-        border-radius: 47px;
-        opacity: 1;
-        margin: 0 15px 0 50px;
-        padding: 0 70px;
-        display: inline-block;
-        font-weight: 500;
-        font-size: 44px;
-        color: #000000;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
-        font-family: 'Roboto', sans-serif;
-        min-width: 340px;
+          background: #738AA6 ;
+          margin-right: 0;
+      
     }
     .bottom-footer {
         padding:30px 0;
@@ -68,8 +56,7 @@
     }
     .copyright {
         width: 100%;
-    padding-bottom: 35px;
-        margin-bottom: 0px;
+        padding: 45px 0;
         font-size: 19px;
         letter-spacing: 0px;
         color: #8E8E8E;
@@ -78,9 +65,10 @@
     }
     .center-logo {
         text-align: center;
-        padding: 0 20px;
-        margin: 0 0 60px;
+        position: relative;
+        top: 128px;
     }
+    
 
     /*  */
     .page-container {
@@ -286,6 +274,7 @@
         padding: 10px 2px;
         letter-spacing: 0;
         font-weight: 500;
+        cursor: default;
     }
     hr.sidebar-divider {
         margin: 0 ;
@@ -1178,7 +1167,7 @@
         width: 100%;
     }
 
-    .table-responsive table.table{
+    .db-table  table.table{
         background: #DFE7F0;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 20px 20px 0px 0px;
@@ -3797,7 +3786,7 @@ display: none;
         -webkit-background-size: cover;
         height: 100%;
         width: 100%;
-        background-position: right center;
+        background-position: center  center;
         background-repeat: no-repeat;
     }
     .check-circle.mb-5 img {
@@ -3805,13 +3794,14 @@ display: none;
         height: 160px;
     }
 
-    .login-box {
+    .login-area {
         text-align: center;
         width: 100%;
         display: inline-block;
-
+        margin-top: 139px;
+       
     }
-
+ 
 
     .login-form-head {
         text-align: center;

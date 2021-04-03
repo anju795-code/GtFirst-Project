@@ -131,7 +131,16 @@
     .container {
         max-width: 1600px;
     }
-    
+    .white-box .sl-btn .btn {
+      width: 116px;
+    }
+    .Price-box .box-body .box-title {
+      
+        font-size: 11px;
+    }
+    .Price-box h4 {
+        font-size: 18px;
+    }
 }
 
 /* Normal desktop :992px. */
@@ -338,7 +347,13 @@
     .sidebar-menu {
         width: 306px;
     }
-
+    .landing-buttons a {
+       min-width: 265px;
+       margin: 0 50px 0 15px;
+       padding: 0 70px;
+        
+        font-size: 35px;
+    }
     .CustomisedDiv a {
         width: 175px
         }
@@ -354,6 +369,14 @@
         padding: 14px;
         top: 0;
         margin: 0;
+    }
+    .db-table .dbText img {
+        position: absolute;
+        right: -4px;
+        top: 36%;
+        height: 16px;
+        width: 16px;
+        z-index: 1;
     }
     .nav-btn span {
         background: #fffbfb;
@@ -467,7 +490,7 @@
     .section-header-breadcrumb {
         overflow: hidden;
         overflow-x: auto;
-        margin: 0 -65px 35px;
+        margin: 0 -56px 35px;
         padding: 10px 0px;
     }
     .embedded-daterangepicker .daterangepicker {
@@ -493,11 +516,104 @@
     .sidebar-footer li a {
         font-size: 20px;
     }
+    .landing-buttons a {
+        min-width: 186px;
+        margin: 0 40px 0 0px;
+        padding: 0 48px;
+        font-size: 28px;
+        height: 65px;
+        line-height: 65px;
+    }
+    .form-gp label {
+        color: #000000;
+        font-size: 20px;
+}
+.message p {
+font-size: 16px;
+}
+
 }
 
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .db-table .dbText img {
+        position: absolute;
+        right: -7px;
+        top: 30%;
+        height: 15px;
+        width: 15px;
+        z-index: 1;
+    }
+    .main2-content {
+        padding: 50px 15px;
+    }
+    .Average-Content h4 {
+        font-size: 18px;
+
+    }
+    .Average-body h6 {
+        font-size: 15px;
+    }
+
+    .Average-Content .badge-danger {
+        font-size: 15px;
+        padding: 6px 13px;
+    }
+    .section-header-breadcrumb {
+        margin: 0 -30px 35px;
+    }
+    .section-header-breadcrumb ul li a {
+        font-size: 17px;
+    }
+    .PriceTable table tr th.Price {
+        min-width: 335px;
+    }
+    .PriceTable table tr th.MonthName {
+        min-width: 76px;
+        position: relative;
+    }
+    .PriceTable table p {
+        font-size: 16px;
+    }
+    .PriceTable table th, .PriceTable table td {
+        font-size: 16px;
+    }
+    .PriceTable table th small, .PriceTable table td small {
+        font-size: 13px;
+    }
+    .EstimatedTable table tr td, .EstimatedTable table thead th {
+        font-size: 14px;
+    }
+    .LongTerm-Content {
+        padding: 60px 25px;
+    }
+    .EstimatedTable table tr th.MonthName {
+        min-width: 100%;
+        white-space: nowrap;
+    }
+    .EstimatedTable table tr th.Price {
+        min-width: 100%;
+        white-space: nowrap;
+    }
+    .EstimatedTable p.BGgreen {
+        padding: 0px 16px;
+        margin: 0 5px;
+    }
+    .EstimatedTable table p {
+        font-size: 16px;
+
+    }
+    .EstimatedTable table tr td, .EstimatedTable table thead th {
+        padding: 10px 24px;
+    }
+    .PriceTable table .badge {
+        font-size: 15px;
+        padding: 6px 15px;
+    }
+    .SwichButton {
+        padding: 0 25px;
+    }
     .Saved-Customisations .card-link {
         font-size: 15px;
         padding: 0.8rem 1rem;;
@@ -561,7 +677,7 @@
         position: initial;
         background: none;
         padding: 0;
-        margin: 10px 30px 0 0;
+        margin: 7px 30px 0 0;
     }
     .sbar_collapsed .nav-btn span {
         background: #026C64;
@@ -574,7 +690,7 @@
     }
     /* main content */
     .main-content-inner {
-        padding: 0 15px 35px;
+        padding: 0 15px 0px;
     }
     .page-container,
     .sbar_collapsed.page-container {
@@ -588,7 +704,7 @@
         margin-left: 21px;
     }
     .page-title {
-        font-size: 21px;
+        font-size: 28px;
     }
     #coin_distribution-wrapper {
         margin-top: -74px;
@@ -647,11 +763,117 @@
     .header-bottom .search-box input {
         max-width: 100%;
     }
+    .main2-content {
+        padding: 50px 15px;
+    }
 }
 
 /* small mobile :320px. */
 
 @media (min-width: 240px) and (max-width: 479px) {
+    .form-gp input {
+        font-size: 13px;
+    }
+    .main2-content {
+        padding: 50px 15px;
+    }
+    .Average-Content h4 {
+        font-size: 18px;
+
+    }
+    .Average-body h6 {
+        font-size: 15px;
+    }
+
+    .Average-Content .badge-danger {
+        font-size: 15px;
+        padding: 6px 13px;
+    }sss
+    .section-header-breadcrumb {
+        margin: 0 -30px 35px;
+    }
+    .section-header-breadcrumb ul li a {
+        font-size: 17px;
+    }
+    .PriceTable table tr th.Price {
+        min-width: 335px;
+    }
+    .PriceTable table tr th.MonthName {
+        min-width: 76px;
+        position: relative;
+    }
+    .PriceTable table p {
+        font-size: 16px;
+    }
+    .PriceTable table th, .PriceTable table td {
+        font-size: 16px;
+    }
+    .PriceTable table th small, .PriceTable table td small {
+        font-size: 13px;
+    }
+    .EstimatedTable table tr td, .EstimatedTable table thead th {
+        font-size: 14px;
+    }
+    .LongTerm-Content {
+        padding: 60px 15px;
+    }
+    .EstimatedTable table tr th.MonthName {
+        min-width: 100%;
+        white-space: nowrap;
+    }
+    .EstimatedTable table tr th.Price {
+        min-width: 100%;
+        white-space: nowrap;
+    }
+    .EstimatedTable p.BGgreen {
+        padding: 0px 16px;
+        margin: 0 5px;
+    }
+    .EstimatedTable table p {
+        font-size: 16px;
+
+    }
+    .EstimatedTable table tr td, .EstimatedTable table thead th {
+        padding: 10px 24px;
+    }
+    .PriceTable table .badge {
+        font-size: 15px;
+        padding: 6px 15px;
+    }
+    .SwichButton {
+        padding: 0 25px;
+    }
+    .TodaysDate input#startDate {
+        padding: 15px 5px !important;
+        font-size: 14px !important;
+      
+    }
+    .TodaysDate p {
+        font-size: 15px;
+    }
+    .message h6 {
+         font-size: 20px;
+    }
+    .submit-btn-area button {
+        font-size: 16px;
+          padding: 11px 45px;
+    }
+    .form-gp label {
+        color: #000000;
+        font-size: 14px;
+    }
+    .form-gp label small {    
+            font-size: 12px;
+    }
+
+    .landing-buttons a {
+        min-width: 130px;
+        margin: 0 26px 0 0px;
+        padding: 0 20px;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
     .db-table tr td:last-child .dbText {
         margin: 15px 0px 0 0;
     }
@@ -725,7 +947,7 @@
     }
     /* main content */
     .main-content-inner {
-        padding: 0 15px 50px;
+        padding: 0 15px 0px;
     }
     .page-container,
     .sbar_collapsed.page-container {
