@@ -15,15 +15,34 @@
 .page-title {
     font-size: 36px;
 }
+.PriceTable table tr td, .PriceTable .table thead th {
+ 
+    font-size:  16px;
+}
+.PriceTable table th small, .PriceTable table td small {
+    font-size:  11px;
+
+}
 }
 
 /*Medium Desktop Device*/
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .PriceTable table tr td, .PriceTable .table thead th {
+ 
+        font-size:  16px;
+    }
+    .PriceTable table th small, .PriceTable table td small {
+        font-size:  11px;
+    
+    }
     .prc-head h4 {
         color: #fff;
         margin-bottom: 15px;
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .prc-head {
+        padding: 27px 16px;
     }
     .page-title {
         font-size: 36px;
@@ -181,10 +200,7 @@
     .minisidebar.main-menu {
         margin-right: 0;
     }
-    /* main content */
-    .main-content-inner {
-        padding: 0 15px 50px;
-    }
+
     .page-container,
     .sbar_collapsed.page-container {
         padding-left: 0;
@@ -208,7 +224,7 @@
     .page-title {
         font-size: 35px;
     }
-
+ 
     .section-header-breadcrumb .breadcrumb-item {
         margin-right: 50px;
     }
@@ -259,10 +275,7 @@
     .minisidebar.main-menu {
         margin-right: 0;
     }
-    /* main content */
-    .main-content-inner {
-        padding: 50px 0;
-    }
+
     .page-container,
     .sbar_collapsed.page-container {
         padding-left: 0;
@@ -347,6 +360,9 @@
     .sidebar-menu {
         width: 306px;
     }
+    .page-title {
+        font-size: 32px;
+    }
     .landing-buttons a {
        min-width: 265px;
        margin: 0 50px 0 15px;
@@ -404,10 +420,7 @@
     .sbar_collapsed .metismenu .collapse.in {
         display: inline-block;
     }
-    /* main content */
-    .main-content-inner {
-        padding: 0 15px 50px;
-    }
+ 
     .page-container,
     .sbar_collapsed.page-container {
         padding-left: 0;
@@ -476,6 +489,15 @@
 
         font-size: 19px;
     }
+    .center-logo img {
+        height: 113px;
+    }
+    .center-logo {
+        top: 90px;
+    }
+    .landing-buttons {
+        margin-top: 44%;
+    }
 }
 
 /* small mobile :320px. */
@@ -490,7 +512,7 @@
     .section-header-breadcrumb {
         overflow: hidden;
         overflow-x: auto;
-        margin: 0 -56px 35px;
+        margin: 0 -34px 35px;
         padding: 10px 0px;
     }
     .embedded-daterangepicker .daterangepicker {
@@ -531,7 +553,16 @@
 .message p {
 font-size: 16px;
 }
+.center-logo img {
+    height: 75px;
+}
+.center-logo {
+    top: 65px;
 
+}
+.landing-buttons {
+    margin-top: 44%;
+}
 }
 
 /* Large Mobile :480px. */
@@ -566,16 +597,9 @@ font-size: 16px;
     .section-header-breadcrumb ul li a {
         font-size: 17px;
     }
-    .PriceTable table tr th.Price {
-        min-width: 335px;
-    }
-    .PriceTable table tr th.MonthName {
-        min-width: 76px;
-        position: relative;
-    }
-    .PriceTable table p {
-        font-size: 16px;
-    }
+   
+   
+  
     .PriceTable table th, .PriceTable table td {
         font-size: 16px;
     }
@@ -688,10 +712,7 @@ font-size: 16px;
     .minisidebar.main-menu {
         margin-right: 0;
     }
-    /* main content */
-    .main-content-inner {
-        padding: 0 15px 0px;
-    }
+  
     .page-container,
     .sbar_collapsed.page-container {
         padding-left: 0;
@@ -771,6 +792,17 @@ font-size: 16px;
 /* small mobile :320px. */
 
 @media (min-width: 240px) and (max-width: 479px) {
+    .Average-Content h2{
+        font-size: 17px
+    }
+    .login-form-body {
+        margin: auto;
+        width: 100%;
+        border-radius: 40px;
+        opacity: 1;
+        padding: 34px 30px;
+        margin-top: 90px;
+    }
     .form-gp input {
         font-size: 13px;
     }
@@ -788,54 +820,38 @@ font-size: 16px;
     .Average-Content .badge-danger {
         font-size: 15px;
         padding: 6px 13px;
-    }sss
+    }
     .section-header-breadcrumb {
         margin: 0 -30px 35px;
     }
     .section-header-breadcrumb ul li a {
         font-size: 17px;
     }
-    .PriceTable table tr th.Price {
-        min-width: 335px;
-    }
-    .PriceTable table tr th.MonthName {
-        min-width: 76px;
-        position: relative;
-    }
-    .PriceTable table p {
-        font-size: 16px;
-    }
-    .PriceTable table th, .PriceTable table td {
-        font-size: 16px;
-    }
+  
+ 
     .PriceTable table th small, .PriceTable table td small {
         font-size: 13px;
     }
-    .EstimatedTable table tr td, .EstimatedTable table thead th {
+    .PriceTable  table tr td,   .PriceTable table thead th {
         font-size: 14px;
+        padding: 10px 24px;
     }
     .LongTerm-Content {
         padding: 60px 15px;
     }
-    .EstimatedTable table tr th.MonthName {
+    .PriceTable  table tr th.MonthName {
         min-width: 100%;
         white-space: nowrap;
     }
-    .EstimatedTable table tr th.Price {
+    .PriceTable  table tr th.Price {
         min-width: 100%;
         white-space: nowrap;
     }
-    .EstimatedTable p.BGgreen {
+    .PriceTable  p.BGgreen {
         padding: 0px 16px;
         margin: 0 5px;
     }
-    .EstimatedTable table p {
-        font-size: 16px;
-
-    }
-    .EstimatedTable table tr td, .EstimatedTable table thead th {
-        padding: 10px 24px;
-    }
+  
     .PriceTable table .badge {
         font-size: 15px;
         padding: 6px 15px;
@@ -923,6 +939,7 @@ font-size: 16px;
         padding: 14px;
         top: 0;
         margin: 0;
+        left: auto;
     }
     .nav-btn span {
         background: #fffbfb;
@@ -947,7 +964,7 @@ font-size: 16px;
     }
     /* main content */
     .main-content-inner {
-        padding: 0 15px 0px;
+        padding: 0px 0px;
     }
     .page-container,
     .sbar_collapsed.page-container {
@@ -1192,10 +1209,7 @@ font-size: 16px;
     .invoice-buttons a {
         padding: 12px 12px;
     }
-    .login-form-head,
-    .login-form-body {
-        padding: 40px 20px;
-    }
+ 
     .rmber-area {
         font-size: 12px;
     }

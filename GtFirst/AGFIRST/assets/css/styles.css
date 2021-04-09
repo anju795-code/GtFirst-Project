@@ -38,6 +38,17 @@
         font-weight: 500;
         font-size: 44px;
     }
+
+
+
+    .front-page a.button-one:hover{
+       background: #9ac3bf ;
+       
+    }
+    .front-page a.button-two:hover{
+        background: #8696aa ;
+        
+     }
     .front-page a.button-one{
      
         background: #9ED8D4 ;
@@ -68,7 +79,9 @@
         position: relative;
         top: 128px;
     }
-    
+    .center-logo img {
+        height: 125px;
+    }
 
     /*  */
     .page-container {
@@ -123,7 +136,7 @@
     padding: 0;
     }
     .main-content-inner {
-        margin: 60px 0px;
+        padding: 60px 0px;
     }
     /*------------------------- END Core Css -------------------*/
 
@@ -134,7 +147,7 @@
         position: fixed;
         left: 0;
         top: 0;
-        z-index: 9999;
+        z-index: 2;
         height: 100vh;
         width: 240px;
         overflow: hidden;
@@ -812,7 +825,6 @@
         font-size: 40px;
         font-weight: 500;
         letter-spacing: 0;
-        margin-right: 30px;
         color: #000000;
     }
     ul.breadcrumbs {
@@ -1162,11 +1174,7 @@
   
     /*-------------------- 22. DB table ------------------- */
 
-   .table-responsive {
-        display: block;
-        width: 100%;
-    }
-
+   
     .db-table  table.table{
         background: #DFE7F0;
         box-shadow: 0px 3px 6px #00000029;
@@ -1188,7 +1196,7 @@
         font-weight: 500;
         letter-spacing: 0;
         align-items: center;
-        line-height: 41px; 
+        line-height: 51px; 
         padding: 10px;
         white-space: nowrap;
     }
@@ -1735,26 +1743,36 @@
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 33px;
     }
+    .PerHead.active {
+        display: contents !important ;
 
-
-
+    }
+    .PerHead {
+    display: none  !important;
+    }
+    .PerKg {
+        display: contents;
+    }
     .Price-box{
         background: #fff;
-        padding: 0 20px 20px;
+        padding: 0 9px 20px;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 20px;
     }
 
     .Price-box .box-body {
-        background: #026C64 ;
+        background: #026C64;
         border-radius: 20px 20px 0px 0px;
-        margin: 0px -20px 0;
-        padding: 18px 14px;
+        margin: 0px -9px 0;
+        padding: 11px 14px;
     }
     .Price-box .box-body .box-title {
-        font-weight: 500;
-        font-size: 13px;
-        color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     }
     .Price-box h4 {
         font-size: 22px;
@@ -1808,9 +1826,6 @@
     background: #163458;
     color: #FFFFFF ;
     }
-    .MakeNewSelection-Details{
-        display: none;
-    }
 
     .active .NewSelection-btn button{
         background: #163458;  
@@ -1819,21 +1834,35 @@
     /* .MakeNewSelection-Details .row{
         padding: 41px 0px 0;
     } */
+
+
     h6.buttons-title {
         color: #5C5C5C;
         font-size: 15px;
         font-weight: 500;
       
     }
+    .SameDive.active {
+        transition: opacity 0.6s linear;
+        opacity: 1;
+        transition: height 300ms;
+    }
+
+ .SameDive:last-child .hrButtons{
+     display: none;
+ }
     .sl-btns a.btn {
         background: #FFFFFF;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 38px;
         color: #000000;
-        font-size: 22px;
-        width: 225px;
+        font-size: 21px;
+        width: 249px;
         font-weight: 500;
         padding: 15px 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .sl-btns a.btn:hover {
         background: #163458;
@@ -1876,10 +1905,10 @@
         width: 537px;
         max-width: 100%;
     }
-    /* .default-btn button:hover {
+    .default-btn button:hover {
         background: #163458;
         color: #FFFFFF ;
-        } */
+        }
 
     /* .default-btn button:hover::after{
         background-image: url(../images/ArrowDown.png) !important;
@@ -1902,11 +1931,13 @@
         position: absolute !important;
         top: 100% !important;
     }
+
+
+    
     .default-btn button {
         width: 100%;
         margin-top: 20px;
         height: 61px;
-        cursor: default !important;
         font-weight: 500;
         border: none;
         font-size: 22px;
@@ -1958,14 +1989,22 @@
         padding: 20px;
     }
 
-    .AgFirst-default .default-btn  .dropdown-menu .dropdown-item {
+    .AgFirst-default .default-btn .dropdown-menu .dropdown-item {
         font-size: 17px;
         color: #6F6F6F;
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 2px solid #f6f6f6;
         width: auto;
-        margin: 0 20px;
-        padding: 15px 10px;
+        margin: 5px 20px;
+        padding: 15px 20px;
         font-weight: 500;
+        background-color: transparent;
+
+    }
+.dropdown-item:focus,   .dropdown-item:hover {
+        color: #6F6F6F;
+        text-decoration: none;
+        background-color: #f4f6f8 !important;
+        border-radius: 30px;
     }
     .btn.focus, .btn:focus {
         outline: 0;
@@ -2021,7 +2060,7 @@
         align-items: center;
         background: #FFFFFF;
         box-shadow: 0px 3px 6px #00000029;
-        margin: 0 -50px 40px;
+        margin: 0 -50px 0px;
         padding: 10px 0px;
     }
     
@@ -2064,31 +2103,31 @@ display: none;
         display: block;
         text-align: center;
     }
-    .LongTerm-Content2 {
-        width: 2000px;
-        height: 20px;
-    }
-
+ 
     .LongTerm-Content {
         background: #FFFFFF;
         box-shadow: 0px 3px 6px #00000047;
         border-radius: 60px;
-        padding: 60px 50px;
-        width: fit-content;
-    }
-    .SlimScrollBottom{
+        padding: 60px 25px 10px 35px;
         width: 100%;
-        overflow: hidden;
-        overflow-x: auto;   
-        padding: 0 60px 60px;
-
+        display: inline-block;
+    }
+    .Average-Content h2{
+        color: #212121;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        font-size: 24px;
     }
 
-    .SlimScrollTop {
-        width: 100%;
-        overflow: hidden;
-        overflow-x: auto;   
-        padding: 0 60px;
+    .Average-Content h4{
+        color: #212121;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        font-size: 22px;
+        border-bottom: 3px solid;
+        margin-bottom: 30px;
+        width: max-content;
     }
     .Average-body {
         width: 100%;
@@ -2097,53 +2136,71 @@ display: none;
     }
     .Average-body h6 {
         color: #212121;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 2;
-    }
-    .Average-Content h4{
-        color: #212121;
-        font-size: 25px;
         font-weight: bold;
-        line-height: 17px;
-        border-bottom: 3px solid;
-        margin-bottom: 30px;
-        width: max-content;
-        padding: 0 0 10px;
+        font-family: 'Segoe UI';
+        font-size: 25px;
     }
-
-    .Average-Content .badge-danger {
+     .Average-body h5 {
+        color: #212121;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 19px;
+    }
+    .Average-body .badge {
+        padding: 0;
+    }
+    .Average-body .badge p {
         background: #163458;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 22px;
         color: #FFFFFF;
-        font-size: 22px;
+        padding: 5px 19px;
+        display: inline-block;
         font-weight: bold;
-        padding: 10px 20px;
+        font-family: 'Segoe UI';
+        font-size: 21px;
     }
+
+    .Average-body .badge span {
+        font-style: italic;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #212121;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
 
     .PriceTable {
         background: #F5F5F5;
-        border-radius: 60px;
+        border-radius: 30px;
         padding: 25px;
         display: block;
         width: 100%;
         margin-bottom: 45px;
     }
-    .PriceTable  table th, .PriceTable  table td{
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-
-    }
-
-    .PriceTable table tr td, .PriceTable .table thead th {
+   
+    .PriceTable table th, .PriceTable table td{
         padding: 10px 0;
         border: 1px solid rgba(120, 130, 140, 0.13);
         text-align: center;
         border-right: none;
         border-bottom: none;
+        color: #000000;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 20px;
     }
+
+    .PriceTable table p{
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
     .PriceTable .table thead th {
         
         vertical-align: top;
@@ -2155,96 +2212,67 @@ display: none;
         text-align: left;
         
     }
-
-    .PriceTable  table p{
-        font-size: 20px;
-        color: #000000;
-        font-weight: bold;
-    }
-
-
-    .PriceTable  table th small, .PriceTable  table td small {
-        color: #8E8E8E;
-        font-size: 15px;
-        font-style: italic;
-        font-weight: 500;
-    }
-
-    .PriceTable table tr th.Price {
-        min-width: 520px;
-    }
-    .PriceTable table tr th.MonthName {
-        min-width: 120px;
-        position: relative;
-    }
-
-    .PriceTable table .badge {
-        margin-right: 50px;
+    .PriceTable table .badge-pill {
+        margin-right: 40px;
         border: 2px solid #163458;
-        border-radius: 25px;
-        font-size: 20px;
-        font-weight: 700;
-        color: #000;
-        padding: 6px 21px;
-    }
-
-
-    .EstimatedTable {
-        background: #e6e9ec;
-        border-radius: 29px;
-        padding: 20px 30px;
-        display: none;
-    }
-    .EstimatedTable   table p{
-        font-size: 20px;
-        color: #000000;
+        border-radius: 20px;
+        font-size: 16px;
         font-weight: bold;
+        font-family: 'Segoe UI';
+        color: #000;
+        padding: 3px 12px;
     }
 
-
-    .EstimatedTable table tr td, .EstimatedTable table thead th {
-        padding: 10px 0 ;
-        border: 1px solid rgba(120, 130, 140, 0.13) ;
-        text-align: center;
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-        border-top: none ;
-        border-bottom: none ;
-        border-right:none;
-    }
-    .EstimatedTable .table thead th {
-        
-        vertical-align: top;
-        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-
-
-    }
-    .EstimatedTable  table td.tableText, .EstimatedTable  table th.tableText{
-        border-left:none;
-        text-align: left;
-        
-        
-    }
-    .EstimatedTable  table th small, .EstimatedTable  table td small {
-        color: #8E8E8E;
-        font-size: 15px;
+    .PriceTable table th small, .PriceTable table td small {
         font-style: italic;
-        font-weight: 500;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #8E8E8E;
     }
 
-    .EstimatedTable table tr th.Price {
-        min-width: 520px;
+    
+    .PriceTable table th small.Paddock, .PriceTable table td small.Paddock {
+        line-height: normal;
+        display: inline-block;
+        width: 100%;
     }
-    .EstimatedTable table tr th.MonthName {
-        min-width: 120px;
-    }
-    .EstimatedTable p.BGgreen {
+
+    .PriceTable table p.BGgreen {
         background: #b3cece;
         border-radius: 21px;
         padding: 5px;
         margin: 0 5px;
+        font-weight: 600;
+        font-family: 'Segoe UI';
     }
+
+    .EstimatedTable table .badge p {
+        border-radius: 19px;
+        color: #000;
+        background: #FFFFFF;
+        padding: 4px 11px;
+        font-style: italic;
+        font-weight: 400;
+        font-family: 'Segoe UI';
+        font-size: 15px;
+        box-shadow: 0px 3px 6px #00000029;
+        display: inline-block;
+    }
+    
+    .EstimatedTable {
+        background: #e6e9ec;
+        display: none;
+        
+    }
+ 
+
+    .EstimatedTable table .badge  {
+        padding: 0;
+        margin-left: 20px;
+    }
+ 
 
     .SwichButton {
         width: 100%;
@@ -2281,7 +2309,14 @@ display: none;
         box-shadow: 1px 3px 6px #00000029;
     }
 
-
+    .PerHeadeSwitch .switch {
+        top: 30px;
+    }
+    .PerHeadeSwitch  .switch input:checked + .slider:after
+    {  
+        content:'per kg';
+        left: 35%;
+    }
 
     .switch {
         position: relative;
@@ -2292,7 +2327,6 @@ display: none;
         padding: 20px;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 32px;
-        /* top: 30px; */
     }
     .switch input {display:none;}
     .switch input:checked + .slider:before {
@@ -2308,10 +2342,7 @@ display: none;
     .switch input:focus + .slider {
         box-shadow: 0px 3px 6px #00000029;
     }
-    
 
-    
-    /*------ ADDED CSS ---------*/
     .slider:after
     {
         content: 'per head';
@@ -2340,18 +2371,122 @@ display: none;
         top: 5px !important;
     }
 
+    /*-------------------- start Customised------------------- */
 
-
-
-
-    /*-------------------- END Long Term ------------------- */
-    .CarcassPriceScrollBottom{
-        width: 100%;
-        overflow: hidden;
-        overflow-x: auto;   
-        padding: 0 60px 60px;
-
+   #Current-LiveweightTable{
+    display: none;
     }
+    .LiveweightTable .PriceTable .table thead th {
+        vertical-align: bottom;
+        border-top: none;
+        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+        padding-top: 0;
+    }
+
+    
+    .PriceTable.CarcassPrice {
+        background: #fff;
+        padding: 0;
+        border-radius: unset;
+        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+        padding-bottom: 20px;
+    }
+    /* .LiveweightTable .PriceTable.CarcassPrice td {
+        border-top: none;
+        padding: .75rem 0;
+    }
+
+    .LiveweightTable .PriceTable.CarcassPrice {
+        background: #fff;
+        padding: 0;
+        border-radius: unset;
+        border-bottom:none;
+    } */
+
+ 
+/*   
+    .LiveweightTable .PriceTable table tr th.MonthName
+    {    
+        min-width: 85px;
+       
+    }
+
+    .LiveweightTable .PriceTable table tr th.Price {
+        min-width: unset;
+    }
+    .LiveweightTable .PaddockPrice.pull-right {
+        padding-right: 160px;
+    } */
+    /* .LiveweightTable .grey-row {
+        margin: -19px 0;
+    } */
+
+    .LiveweightTable .Average-body p.Calculatedyear {
+        font-size: 15px;
+        color: #000000;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        margin-right: 105px;
+        display: block;
+    }
+
+    .LiveweightTable .PriceTable table tr td,     .LiveweightTable  .PriceTable .table thead th {
+        font-size: 20px;
+    }
+    .LiveweightTable .PriceTable table td small {
+        color: #000000;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        padding: 0px 6px 0 0px;
+    }
+    .circle-Green {
+        color: #FFFFFF;
+        padding: 4px 0;
+        background: #026C64;
+        font-family: 'Segoe UI';
+        font-weight: 600;
+        border-radius: 19px;
+        margin: 0 auto;
+        width: 60px;
+    }
+    .circle-Blue {
+        color: #FFFFFF;
+        padding: 4px 0;
+        background: #163458;
+        font-family: 'Segoe UI';
+        font-weight: 600;
+        border-radius: 19px;
+        margin: 0 auto;
+        width: 60px;
+    }
+    .LiveweightTable table span.GreenButton {
+        color: #FFFFFF;
+        padding: 6px 22px;
+        background: #026C64;
+        font-family: 'Segoe UI';
+        border-radius: 19px;
+        margin: 0 8px 0 0px;
+    }
+    .LiveweightTable table span.BlueButton {
+        color: #FFFFFF;
+        padding: 6px 22px;
+        background: #163458;
+        font-family: 'Segoe UI';
+        border-radius: 21px;
+ 
+    }
+    .CommonTable .EstimatedTable table tr th.Price {
+        min-width: auto;
+    }
+    .CommonTable .EstimatedTable table tr th.MonthName {
+        min-width: 60px;
+    }
+
+ 
+    /*-------------------- END Long Term ------------------- */
+  
     .GraphDetails  td {
         border: none;
         font-size: 20px;
@@ -2362,33 +2497,8 @@ display: none;
         padding-top: 25px;
     }
 
-    .PriceTable.CarcassPrice {
-        background: #fff;
-        padding: 0;
-        border-radius: unset;
-        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-        padding-bottom: 20px;
-    }
-
-    .PriceTable table span{
-        font-size: 20px;
-        color: #000000;
-        font-weight: 700;
-        position: absolute;
-        left: 0;
-        top: -32px;
-        right: 0;
-        font-style: italic;
-        display: inline-block;
-    }
-    .PriceTable.CarcassPrice th, .PriceTable.CarcassPrice td{
-        font-size: 20px;
-        color: #000000;
-        font-weight: 500;
-        padding: .75rem 19px;
-    }
-    .PriceTable.CarcassPrice td {
-        border-top: none ;
+    .PriceTable table span img {
+        margin-left: 10px;
     }
 
     .LiveweightPrice{
@@ -2409,9 +2519,10 @@ display: none;
     }
 
     .PriceTable.LiveweightPrice th, .PriceTable.LiveweightPrice td{
+        font-family: 'Segoe UI';
         font-size: 20px;
         color: #000000;
-        font-weight: 500;
+        font-weight: 600;
         padding: .75rem 19px ;
     }
 
@@ -2437,13 +2548,20 @@ display: none;
     }
 
 
-
     .PaddockPrice.pull-right {
         padding-right: 35px;
-        font-size: 17px;
+        font-size: 20px;
         color: #212121;
+        font-style: italic;
+        font-weight: 600;
+        font-family: 'Segoe UI';
     }
+ 
+    .Save-buttons a:hover {
+        background: #163458;
+        color: #FFFFFF;
 
+    }
 
     .Save-buttons a {
         display: inline-block;
@@ -2477,6 +2595,95 @@ display: none;
         font-weight: 500;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 38px;
+    }
+    .EditDefault a {
+        padding: 10px 50px;
+        border: none ;
+        box-sizing: border-box;
+        color: #000000 ;
+        font-size: 18px ;
+        letter-spacing: 1px;
+      position: relative;
+        background: #FFFFFF;
+        text-align: center;
+        font-weight: 500;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 38px;
+    }
+
+
+    .bs-popover-auto[x-placement^=bottom], .bs-popover-bottom {
+        margin-top: .5rem;
+    }
+    .popover {
+        max-width: 100%;
+         position: fixed !important;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         outline: 0;
+         width: 100%;
+         transform: translate3d(0, 0, 0px) !important;
+         background: #00000070 !important;
+         margin-bottom: 0 !important;
+ 
+     }
+     .popover-body {
+         color: #000000;
+         position: absolute;
+         top: 0;
+         right: 0;
+         font-size: 20px;
+         display: block;
+         max-width: 685px;
+         font-style: italic;
+         font-weight: 600;
+         font-family: 'Segoe UI';
+         background: #FFFFFF;
+         box-shadow: 0px 3px 6px #00000029;
+         opacity: 1 !important;
+         border-radius: 15px;
+         transform: translate3d(-5px, 60px, 0px);
+         padding: 10px 30px 20px 20px; 
+     }
+ 
+     .popover-body::before {
+         bottom: 0;
+         border-top-color: rgba(0,0,0,.25);
+     }
+      .popover-body ::before {
+         border-width: .5rem .5rem 0;
+     }
+
+     .popover  .arrow {
+        display: none;
+    }
+.popover-body::after {
+        bottom: 1px;
+        border-top-color: #fff !important;
+    }
+   .popover-body::after, .popover-body::before {
+        border-width: .5rem .5rem 0;
+    }
+
+    .popover-body::after, .popover-body::before {
+        position: absolute;
+        display: block;
+        content: "";
+        border-color: #ec575700;
+        border-style: solid;
+        bottom: -8px;
+        right: 6%;
+    }
+ 
+  .EditDefault a:hover {
+       color: #FFFFFF;
+       background: #163458;
+    }
+   
+    .EditDefault span {
+        margin-left: 25px;
     }
     .CustomisedDiv input.CustomisationName {
         padding: 12px 40px !important;
@@ -2519,11 +2726,11 @@ display: none;
     }
 
     .CustomisedDiv a {
-        padding: 7px 4px !important;
-        border: none !important;
+        padding: 7px 4px;
+        border: none ;
         box-sizing: border-box;
-        color: #000000 !important;
-        font-size: 25px !important;
+        color: #000000 ;
+        font-size: 25px ;
         letter-spacing: 1px;
         width: 197px;
         position: relative;
@@ -2533,6 +2740,9 @@ display: none;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 38px;
     }
+
+
+    
     .CustomisedDiv input::-webkit-input-placeholder {
         color: #e1e1e1;
     }
@@ -2544,10 +2754,11 @@ display: none;
     .CustomisedDiv input:-ms-input-placeholder {
         color: #e1e1e1;
     }
-
+    .CurrentMarket-btn.active button {
+      background: #163458;
+    }
 
     .CurrentMarket-btn button {
-        width: 100%;
         margin-top: 20px;
         height: 61px;
         font-weight: 500;
@@ -2561,11 +2772,11 @@ display: none;
         border-radius: 42px;
         letter-spacing: 0px;
         text-align: center;
-        padding: 0 30px;
+        padding: 0 100px;
         background: #026C64;
     }
     .CurrentMarket-btn button:hover {
-        background: #026C64;
+        background: #163458;
         color: #FFFFFF;
     }
 
@@ -2607,7 +2818,10 @@ display: none;
         color: #FF0200;;
 
     }
+    .prc-list p.profit {
+        color: #4FFF00;;
 
+    }
     .prc-list p {
     font-size: 35px;
         font-weight: 500;
@@ -2661,13 +2875,12 @@ display: none;
     .daterangepicker .calendar-table th.month {
         color: #1D2634 !important;
         font-size: 20px !important;
+        transition: transform .2s;
     }
     .daterangepicker .calendar-table td {
         white-space: nowrap;
         text-align: center;
         vertical-align: middle;
-        width: 30px !important;
-        height: 30px !important;
         line-height: 24px;
         font-size: 17px;
         font-weight: 500;
@@ -2676,29 +2889,41 @@ display: none;
         white-space: nowrap;
         cursor: pointer;
         color: #1D2634;
-        padding: 15px;
+        padding: 13px 9px;
         transition: transform .2s;
     }
-
     .daterangepicker td.available:hover, .daterangepicker th.available:hover {
         color: #1D2634 !important;
         background: #E6F2FF;
         border-radius: 50px !important;
-        font-size: 14px !important;
-        -ms-transform: scale(0.9); /* IE 9 */
-        -webkit-transform: scale(0.9); /* Safari 3-8 */
-        transform: scale(0.9);
+        font-size: 18px !important;
+        transition: 0.3s all ease-in-out;
+        -ms-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7)
     }
-
-    .daterangepicker td.active, .daterangepicker td.active:hover {
+ .daterangepicker td.active:hover {
         color: #fff !important;
         background: #163458;
         border-radius: 50px !important;
-        font-size: 14px !important;
-        -ms-transform: scale(0.9); /* IE 9 */
-        -webkit-transform: scale(0.9); /* Safari 3-8 */
-        transform: scale(0.9);
-        
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 24px;
+        font-size: 17px  !important;
+        font-weight: 500;
+        border-radius: 4px;
+        border: none;
+        white-space: nowrap;
+        cursor: pointer;
+        color: #1D2634;
+        padding: 13px 9px;
+     
+        transition:unset !important;
+        -ms-transform: unset !important;
+        -webkit-transform: unset !important; 
+        transform: unset !important;
+   
     }
 
     button.cancelBtn.btn.btn-sm.btn-default {
@@ -2709,12 +2934,30 @@ display: none;
         font-size: 14px;
         font-weight: bold;
         padding: 4px 8px;
-        background: #163458;
+        background-color: #163458;
         box-shadow: 0px 2px 4px #0000001a;
         border-radius: 8px;
         border: none !important;
         width: 62px;
         height: 32px;
+        transition: transform .2s;
+    }
+
+    .daterangepicker .drp-buttons .btn:active,  .daterangepicker td.active{
+        color: #fff;
+        border-radius: 50px !important;
+        background-color: #163458;
+        border-color: #163458;
+    }
+
+    .daterangepicker .drp-buttons .btn:hover{
+        color: #fff;
+        background-color: #163458;
+        border-color: #163458;
+        transition: 0.3s all ease-in-out;
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7)
     }
     .daterangepicker .drp-buttons {
         clear: both;
@@ -2852,175 +3095,6 @@ display: none;
     /*-------------------- END Letest Post ------------------- */
 
 
-    /*-------------------- 3. Dashboard Two ------------------- */
-
-    .sales-style-two .single-report {
-        background: #fff;
-        overflow: hidden;
-        position: relative;
-        padding: 10px 15px 10px;
-    }
-
-    #visitor_graph {
-        height: 400px;
-    }
-
-
-
-    /* Todays Order List */
-
-
-    .pagination_area ul li {
-        display: inline-block;
-    }
-
-    .pagination_area ul li a {
-        display: block;
-        height: 45px;
-        line-height: 44px;
-        width: 45px;
-        border: 2px solid #f1ebeb;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 500;
-        color: #4d4d4d;
-        margin-left: 3px;
-    }
-
-    .pagination_area ul li a:hover {
-        background: #8553fa;
-        color: #fff;
-    }
-
-    .pagination_area ul li a i {
-        font-size: 14px;
-    }
-
-    /* team member area */
-
-    .team-search input {
-        height: 40px;
-        padding-left: 12px;
-        border: 1px solid #e1e1e1;
-        letter-spacing: 0;
-        font-size: 13px;
-        border-radius: 2px;
-    }
-
-    .team-search input::-webkit-input-placeholder {
-        color: #e1e1e1;
-    }
-
-    .team-search input::-moz-placeholder {
-        color: #e1e1e1;
-    }
-
-    .team-search input:-ms-input-placeholder {
-        color: #e1e1e1;
-    }
-
-    .member-box .media-body {}
-
-    .member-box .media-body p {
-        font-size: 18px;
-        font-weight: 500;
-        color: #4d4d4d;
-    }
-
-    .member-box .media-body span {
-        display: block;
-        font-size: 15px;
-        font-weight: 500;
-        color: #4d4d4d;
-        letter-spacing: 0;
-    }
-
-    .tm-social a {
-        display: inline-block;
-        margin-left: 15px;
-        font-size: 22px;
-        color: #555;
-    }
-
-    .s-member {
-        padding: 16px 15px 17px;
-        background: #f9f9f9;
-        margin: 15px 0;
-    }
-
-    /*-------------------- END Dashboard Two ------------------- */
-
-
-    /*-------------------- 4. Dashboard Three ------------------- */
-
-    .seo-fact {
-        border-radius: 3px;
-    }
-
-    .sbg1 {
-        background: -webkit-linear-gradient(291deg, rgb(77, 77, 253) 0%, rgb(108, 143, 234) 100%);
-        background: linear-gradient(159deg, rgb(77, 77, 253) 0%, rgb(108, 143, 234) 100%);
-    }
-
-    .sbg2 {
-        background: -webkit-linear-gradient(291deg, rgb(5, 176, 133) 0%, rgb(27, 212, 166) 59%);
-        background: linear-gradient(159deg, rgb(5, 176, 133) 0%, rgb(27, 212, 166) 59%);
-    }
-
-    .sbg3 {
-        background: -webkit-linear-gradient(298deg, rgb(216, 88, 79) 0%, rgb(243, 140, 140) 100%);
-        background: linear-gradient(152deg, rgb(216, 88, 79) 0%, rgb(243, 140, 140) 100%);
-    }
-
-    .sbg4 {
-        background: -webkit-linear-gradient(59deg, rgb(254, 208, 63) 0%, rgb(230, 190, 63) 110%);
-        background: linear-gradient(31deg, rgb(254, 208, 63) 0%, rgb(230, 190, 63) 110%);
-    }
-
-    .seofct-icon {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .seofct-icon i {
-        font-size: 52px;
-        margin-right: 20px;
-        vertical-align: middle;
-        -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-        display: inline-block;
-    }
-
-    .seo-fact h2 {
-        font-size: 27px;
-        color: #fff;
-        letter-spacing: 0;
-    }
-
-    .seo-fact #seolinechart3,
-    .seo-fact #seolinechart4 {
-        max-width: 200px;
-    }
-
-    /* socialads */
-
-    .highcharts-credits {
-        display: none;
-    }
-
-    /* user-statistics */
-
-    #user-statistics {
-        height: 350px;
-    }
-
-    /* salesanalytic */
-
-    #salesanalytic {
-        height: 500px;
-    }
 
     /* timeline */
 
@@ -3176,60 +3250,6 @@ display: none;
         }
     }
 
-    .testimonial-carousel {
-        margin: 60px 0 28px;
-    }
-
-    .tstu-img {
-        width: 70px;
-        width: 70px;
-        border-radius: 50%;
-        overflow: hidden;
-        float: left;
-        margin-right: 20px;
-    }
-
-    .tstu-content {
-        overflow: hidden;
-    }
-
-    .tstu-name {
-        font-size: 20px;
-        color: #fff;
-        letter-spacing: 0;
-    }
-
-    .profsn {
-        display: block;
-        font-size: 16px;
-        color: #fff;
-        letter-spacing: 0.02em;
-        margin-bottom: 15px;
-    }
-
-    .tst-item p {
-        color: #fff;
-    }
-
-    .testimonial-carousel .owl-dots {
-        text-align: center;
-        margin-top: 60px;
-    }
-
-    .testimonial-carousel .owl-dots>div {
-        height: 11px;
-        width: 11px;
-        background: #fff;
-        display: inline-block;
-        border-radius: 50%;
-        margin: 0 4px;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
-
-    .testimonial-carousel .owl-dots .active {
-        background: #f7cb3f;
-    }
 
     /*-------------------- END Dashboard Three ------------------- */
 
@@ -3241,15 +3261,18 @@ display: none;
         border-radius: 70px;
         padding: 60px;
     }
-    .InformationText {
-        margin-bottom: 50px;
-    }
+
+  
     .InformationText  .title {
         font-size: 25px;
         color: #000000;
         margin-bottom: 10px;
         font-weight: bold;
     }
+    .InformationText {
+        margin-bottom: 50px;
+    }
+ 
     .InformationText p {
         font-size: 18px;
         font-weight: 400;
@@ -3289,6 +3312,12 @@ display: none;
         margin-bottom: 10px;
         font-weight: bold;
         padding: 0 0 49px;
+    }
+    .main-content-inner.SetttingsContent {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 70px;
+        padding: 45px 45px 60px;
     }
 
     /*-------------------- END Settings ------------------- */
@@ -3388,41 +3417,103 @@ display: none;
     }
    
 
-.ShortBy.dropdown {
-    display: inline-block;
-    width: max-content;
+
+    .ShortBy {
+        vertical-align: bottom;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+    }
+    .ShortBy .select2-container {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+        width: max-content !important;
+    }
+    .ShortBy .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 100%;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 20px;
+    }
+    .ShortBy   .select2-container .select2-selection--single {
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 28px;
+        user-select: none;
+        -webkit-user-select: none;
+        width: min-content  !important;
+    }
+   .select2-container--default .select2-selection--single {
+        background-color: transparent  !important;
+        border: none !important;
+        border-radius: 4px;
+    }
+    
+
+ .select2-search--dropdown {
+    display: none !important;
 }
-    .ShortBy .btn-light.dropdown-toggle {
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #163458 transparent transparent transparent !important;
+
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #163458 transparent !important;
+    border-width: 0 4px 5px 4px;
+}
+.ShortBy .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #163458;
+    line-height: 28px;
+    font-size: 16px !important;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: transparent !important;
+    color: #163458 !important;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: transparent !important;
+    color: #163458 !important;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: transparent !important;
+    color: #163458 !important;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.select2-results__option--selectable {
+    color: #163458 !important;
+    font-size: 14px;
+    font-style: italic;
+}
+span.select2-dropdown.select2-dropdown--below {
+    width: 150px !important;
+    border: none !important;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    display: inline-block;
+    left: -40px;
+}
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
         color: #163458;
-        background-color: transparent;
-        border-color: transparent;
         font-size: 14px;
         font-style: italic;
-        padding: 11px 17px 11px 0;
-        width: max-content;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+      
     }
-    .ShortBy  .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
-        color: #163458;
-        background-color: transparent;
-        border-color: transparent;
-        box-shadow: none !important;
-    }
-    .show>.btn-light.dropdown-toggle:focus{
-        box-shadow:none !important;
-    }
-
-    .ShortBy .btn-light.focus, .ShortBy .btn-light:focus {
-        box-shadow: none;
-    }
-    .ShortBy .dropdown-menu.show {
-        display: inline-block;
-        min-width: auto;
-        width: 127px;
-    }
-    .ShortBy span {
+    .ShortBy span.SortText {
         font-size: 14px;
         line-height: normal;
         padding: .25rem 0;
@@ -3481,93 +3572,186 @@ display: none;
     /*-------------------- END List Group ------------------- */
 
 
-    /*-------------------- 15. Delete Modal ------------------- */
+    /*--------------------  Save Modal ------------------- */
 
-    .DeleteModal .modal-footer{
-        display: inline-block;
-        border: none;
-        padding-bottom: 30px;
-    }
-    .DeleteModal .modal-content {
+  
+    .SaveModal .modal-content {
         background: #FFFFFF ;
         box-shadow: 0px 3px 6px #00000029;
-        border-radius: 45px;
+        border-radius: 60px;
     }
-    .DeleteModal .close {
-        float: left;
+    .SaveModal .close {
         margin: 0;
-        padding: 0;
+        padding: 20px 1.5rem 0 0;
+        opacity: 1;
     }
-    .DeleteModal  .modal-header {
+    .SaveModal .modal-header {
         width: 100%;
         display: inline-block;
         border: none;
+        padding: 0;
     }
 
-    .DeleteModal .modal-body {
-        text-align: center;
-        padding: 0 68px;
+    .SaveModal .modal-body {
+        text-align: left;
+        padding: 0 35px;
     }
-
-    .DeleteModal  .modal-body h3 {
-        font-size: 19px;
-        font-weight: 500;
+    .SaveModal .close img {
+        width: 49px;
+        height: 49px;
+    }
+    .SaveModal .modal-body h3 {
+        font-size: 22px;
+        font-weight: bold;
         margin-bottom: 25px;
         line-height: normal;
         color: #000000;
     }
+    
 
-
-    .DeleteModal  .modal-body p {
-        font-size: 17px;
-        font-weight: 400;
-        margin-bottom: 50px;
-        line-height: normal;
-        color: #000000;
+ 
+    .SaveModal   input {
+        padding: 7px 25px !important;
+        box-sizing: border-box;
+        color: #000000 !important;
+        font-size: 19px !important;
+        width: 100%;
+        position: relative;
+        text-align: left;
+        font-weight: 500;
+        border-radius: 29px;
+        background: #FFFFFF;
+        border: 1px solid #707070;
+        border-radius: 39px;
+    }
+    button, input {
+        overflow: visible;
     }
 
-    .DeleteModal  button.btn.btn-secondary {
-        background: #FFFFFF ;
-        margin-right: 94px;
-    }
-
-    .DeleteModal  button.btn.btn-primary{
-        background: #163458 ;
-        box-shadow: 0px 3px 6px #00000029;
-        border-radius: 35px;
+    .SaveModal .modal-footer {
+        display: inline-block;
         border: none;
-        color: #fff;
+        padding: 35px 0;
     }
-
-    .DeleteModal   .btn-primary:not(:disabled):not(.disabled):active{
+    .SaveModal .btn:hover {
         color: #fff;
         background-color: #163458;
         border-color: #163458;
         box-shadow: none !important;
     }
-    .DeleteModal  .btn {
-        background: #FFFFFF ;
+    .SaveModal .btn:not(:disabled):not(.disabled):active{
+        color: #fff;
+        background-color: #163458;
+        border-color: #163458;
+        box-shadow: none !important;
+    }
+    .SaveModal .btn {
+        background: #FFFFFF;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 35px;
         color: #000000;
         border: none;
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 60px;
+    
     }
-    /*-------------------- END Modal ------------------- */
+    /*-------------------- END Save Modal ------------------- */
 
 
-    /*-------------------- 16. Pagination ------------------- */
 
-    .pg-color-border li a {
-        border-color: #007BFF;
-    }
+/*-------------------- 15. Delete Modal ------------------- */
 
-    .pagination li a {
-        font-family: 'Roboto', sans-serif;
-    }
+.DeleteModal .modal-footer{
+    display: inline-block;
+    border: none;
+    padding-bottom: 30px;
+}
+.DeleteModal .modal-content {
+    background: #FFFFFF ;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 45px;
+}
+.DeleteModal .close {
+    float: left;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
 
-    /*-------------------- END Pagination ------------------- */
+}
+.DeleteModal  .modal-header {
+    width: 100%;
+    display: inline-block;
+    border: none;
+}
+
+.DeleteModal .modal-body {
+    text-align: center;
+    padding: 0 46px;
+}
+
+.DeleteModal  .modal-body h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: normal;
+    color: #000000;
+}
+.DeleteModal  .close img {
+    width: 49px;
+    height: 49px;
+}
+
+.DeleteModal  .modal-body p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: normal;
+    color: #000000;
+}
+
+.DeleteModal button.btn.btn-secondary {
+    background: #FFFFFF;
+    margin-right: 30px;
+}
+
+.DeleteModal  button.btn.btn-primary{
+    background: #163458 ;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    border: none;
+    color: #fff;
+}
+
+.DeleteModal   .btn-primary:not(:disabled):not(.disabled):active{
+    color: #fff;
+    background-color: #163458;
+    border-color: #163458;
+    box-shadow: none !important;
+}
+.DeleteModal  .btn {
+    background: #FFFFFF ;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    color: #000000;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*-------------------- END Modal ------------------- */
+
+
+/*-------------------- 16. Pagination ------------------- */
+
+.pg-color-border li a {
+    border-color: #007BFF;
+}
+
+.pagination li a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-------------------- END Pagination ------------------- */
 
 
     /*-------------------- 17. Form ------------------- */
@@ -3654,116 +3838,6 @@ display: none;
     /*-------------------- END Form ------------------- */
 
 
-    /*-------------------- 18. Icons ------------------- */
-
-
-
-    .fw-icons a {
-        color: #444;
-        margin: 9px 0;
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .fw-icons a:hover {
-        color: #007BFF;
-    }
-
-    .fw-icons a i {
-        width: 30px;
-        font-size: 14px;
-    }
-
-
-
-    /* icon-container */
-
-    .icon-section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
-
-    .icon-container {
-        cursor: pointer;
-        -ms-flex-preferred-size: calc(100% * (1/4));
-            flex-basis: calc(100% * (1/4));
-    }
-
-    .icon-container [class^="ti-"] {
-        width: 30px;
-        font-size: 14px;
-        display: inline-block;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
-
-    .icon-container:hover [class^="ti-"] {
-        -webkit-transform: scale(2);
-                transform: scale(2);
-        -webkit-transform-origin: left center;
-                transform-origin: left center;
-    }
-
-    .icon-container span.icon-name {
-        color: #444;
-        margin: 9px 0;
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
-
-    .icon-container:hover span.icon-name {
-        -webkit-transform: translateX(10px);
-                transform: translateX(10px);
-    }
-
-    .icon-container:hover span {
-        color: #007BFF;
-    }
-
-    /*-------------------- END Icons ------------------- */
-
-
-    /*-------------------- 19. Table Basic ------------------- */
-    /* 
-    .single-table .table {
-        margin-bottom: 0;
-    }
-
-    table tr th {
-        border-bottom: none;
-    }
-
-    table tr th,
-    table tr td {
-        border-top: 1px solid rgba(120, 130, 140, 0.13) !important;
-    }
-
-    table tr td [class^="ti-"] {
-        cursor: pointer;
-    }
-
-    .table-bordered td,
-    .table-bordered th {
-        border: 1px solid rgba(120, 130, 140, 0.13) !important;
-    }
-
-    .status-p {
-        color: #fff;
-        padding: 0px 20px 1px;
-        border-radius: 20px;
-        display: inline-block;
-        text-transform: capitalize;
-        vertical-align: middle;
-    } */
-
-    /*-------------------- END Table Basic ------------------- */
-
-
 
 
 
@@ -3798,14 +3872,14 @@ display: none;
         text-align: center;
         width: 100%;
         display: inline-block;
-        margin-top: 139px;
        
     }
  
-
     .login-form-head {
         text-align: center;
         margin-bottom: 50px;
+        position: relative;
+        top: 79px;
     }
     .login-form-head img {
         width: 201px;
@@ -3828,15 +3902,16 @@ display: none;
 
     .login-form-body {
         margin: auto;
-        width: 774px;
+        width: 620px;
         max-width: 100%;
         position: relative;
-        background: #FFFFFF ;
+        background: #FFFFFF;
         box-shadow: 0px 3px 6px #0000007a;
-        border-radius: 90px;
+        border-radius: 65px;
         opacity: 1;
-        padding: 90px;
+        padding: 40px 70px;
         display: inline-block;
+        margin-top: 90px;
     }
     .custom-control.custom-checkbox.mr-sm-2 {
         text-align: left;
@@ -3928,27 +4003,27 @@ display: none;
         width: 100%;
         padding: 10px 20px;
         background: #FFFFFF ;
-        border: 1px solid #707070;
+        border: 1px solid #acacac;
         border-radius: 39px;
         opacity: 1;
-        font-weight: 500;
+        font-weight: 400;
         color: #000000;
-        font-size: 19px;
+        font-size: 22px;
     }
     .form-gp input::-webkit-input-placeholder {
-        color: #a3909054
+        color: #bdbdbd
     }
 
     .form-gp input::-moz-placeholder {
-        color: #a3909054
+        color: #bdbdbd
     }
 
     .form-gp input:-ms-input-placeholder {
-        color: #a3909054
+        color: #bdbdbd
     }
 
     .form-gp input:-moz-placeholder {
-        color: #a3909054
+        color: #bdbdbd
     }
 
     .form-gp i {
@@ -3984,7 +4059,7 @@ display: none;
         font-weight: 500;
     }
     .submit-btn-area button:hover {
-        background: #9ED8D4 ;
+        background: #a1cac7 ;
         color: #000000;
     }
 
@@ -3992,8 +4067,26 @@ display: none;
         color: #000000;
     }
 
+    .submit-btn-area.SignUp button {
+    
+        color: #000000;
+        background: #738AA6 ;
+
+    }
+    .submit-btn-area.SignUp button:hover {
+    
+        color: #000000;
+        background: #8d9eb3 ;
+
+    }
+    .submit-btn-area.SignUp button a:hover  {
+     
+        color: #000000;
+        background: #8d9eb3 ;
+
+    }
     .submit-btn-area button a:hover  {
-        background: #9ED8D4 ;
+        background: #a1cac7 ;
         color: #000000;
 
     }
@@ -4112,184 +4205,3 @@ display: none;
 
     /*-------------------- END 404 Page ------------------- */
 
-
-    /*-------------------- 26. Offset Sidebar ------------------- */
-
-    .offset-area {
-        position: fixed;
-        right: -320px;
-        top: 0;
-        height: 100vh;
-        width: 320px;
-        background: #f9f9f9;
-        z-index: 998;
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
-        -webkit-transition: right 0.3s cubic-bezier(0.62, -0.01, 0.2, 0.83) 0s;
-        transition: right 0.3s cubic-bezier(0.62, -0.01, 0.2, 0.83) 0s;
-    }
-
-    .show_hide.offset-area {
-        right: 0;
-    }
-
-    .offset-close {
-        font-size: 19px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-        text-align: center;
-        line-height: 40px;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-    }
-
-    .offset-close:hover {
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-    }
-
-    .offset-menu-tab {
-        padding: 30px 20px;
-    }
-
-    .offset-menu-tab li {
-        display: inline-block;
-        width: 50%;
-        text-align: center;
-    }
-
-    .offset-menu-tab li a {
-        display: block;
-        font-size: 16px;
-        color: #444;
-        font-weight: 500;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        padding-bottom: 15px;
-    }
-
-    .offset-menu-tab li a.active {
-        color: #853bfa;
-    }
-
-    .offset-menu-tab li a:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 5px;
-        width: 100%;
-        background: #853bfa;
-        border-radius: 30px;
-        -webkit-transition: all 0.3s cubic-bezier(0.91, 0.31, 0.31, 0.92) 0s;
-        transition: all 0.3s cubic-bezier(0.91, 0.31, 0.31, 0.92) 0s;
-    }
-
-    .offset-menu-tab li a.active:before {
-        left: 0;
-    }
-
-    .offset-menu-tab li a:before {
-        left: 100%;
-    }
-
-    .offset-menu-tab li:last-child a:before {
-        display: none!important;
-    }
-
-    .offset-content {
-        padding: 15px;
-    }
-
-    .recent-activity {
-        padding-top: 7px;
-        padding-left: 53px;
-    }
-
-    .offset-settings h4 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        letter-spacing: 0;
-        font-weight: 700;
-        color: #444;
-        margin-bottom: 23px;
-    }
-
-    .s-swtich input[type=checkbox] {
-        height: 0;
-        width: 0;
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .s-swtich label {
-        cursor: pointer;
-        text-indent: -9999px;
-        width: 40px;
-        height: 23px;
-        background: #1bd4a6;
-        display: block;
-        border-radius: 100px;
-        position: relative;
-        margin: 0;
-    }
-
-    .s-swtich label:after {
-        content: '';
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: 15px;
-        height: 15px;
-        background: #fff;
-        border-radius: 90px;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
-
-    .s-swtich input:checked+label {
-        background: #bada55;
-    }
-
-    .s-swtich input:checked+label:after {
-        left: calc(100% - 5px);
-        -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-    }
-
-    .s-swtich label:active:after {
-        width: 40px;
-    }
-
-    .s-settings {
-        margin-bottom: 30px;
-    }
-
-    .s-settings p {
-        color: #888383;
-        font-size: 14px;
-    }
-
-    .s-sw-title {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .s-sw-title h5 {
-        font-size: 16px;
-        color: #555;
-    }
-
-    /*-------------------- END Offset Sidebar ------------------- */

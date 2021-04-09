@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <!-- others css -->
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/default-css.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -53,7 +55,7 @@
                             </li>
                            
                             <li>
-                                <a href="long-term.html"><img src="assets/images/Term.svg"> <span>Long Term</span></a>
+                                <a href="Make-New-Selection-Long.html"><img src="assets/images/Term.svg"> <span>Long Term</span></a>
                             </li>
                             <li>
                                 <a href="Information.html"><img src="assets/images/Information.svg"><span>Information</span></a>
@@ -78,32 +80,32 @@
               <!-- Heading area start -->
               <div class="page-breadcrumb">
                 <div class="row">
-                    <div class="col-12 col-sm-4 align-self-center">
+                    <div class="col-12  col-lg-5 col-sm-5 align-self-center">
                         <div class="nav-btn pull-left">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>  <h4 class="page-title mb-0">Selection History</h4>
                    </div>
-                   <div class="col-8 col-sm-7 text-right">
-                            <div class="ShortBy dropdown ">
-                                <span> Sort by</span>
-                                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">
-                                Date Added
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Latest Current Price vs Latest Long Term Average</a>
-                                </div>
-                            </div>
+                   <div class="col-8 col-lg-6  col-sm-6 text-right">
+                    <div class="ShortBy"> <span class="SortText"> Sort by</span>
+                         <select class="select2 select2-hidden-accessible" 
+                         onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                          <option selected="selected"> Date Added</option>
+                          <option  value="SelectionHistory-Current.html"> 
+                            Latest Current Price vs Latest Long Term Average
+                        </option>
+                     </select> 
+                     </div> <!-- /.ShortBy -->
                      </div>
-                     <div class="col-4 col-sm-1">
+                     <div class="col-4 col-lg-1  col-sm-1">
                     <div class="BackButton"><a href="dashbaord.html"><img src="assets/images/BackButton.png"></a></div>
                     </div>
                 </div>
             </div>
-
+         
      <!-- Heading area end -->
-        <div class="main-content-inner">
+        <div class="main-content-inner pt-0">
               <!-- Table area start -->
                              <div class="db-table table-responsive mt-5">
                                 <table class="table table-earning SelectionHistory text-right">
@@ -170,6 +172,26 @@
                                             <td class="tdText text-left"><div class="dbText">340 kg </div</td>
                                                     
                                         </tr>
+                                        <tr class="Row-Green">
+                                            <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                            <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                    
+                                        </tr>
+                                        <tr class="Row-Green">
+                                            <td class="text-center" data-toggle="modal"  data-target="#DeleteModalCenter"><img src="assets/images/Trash.png" alt="icon"></td>
+                                            <td class="tdText text-left"><div class="dbText">Buyer <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">North Island <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">Cattle <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">Bull <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">R1 <img src="assets/images/Arrow.svg" alt="icon"></div</td>
+                                            <td class="tdText text-left"><div class="dbText">340 kg </div</td>
+                                                    
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -209,15 +231,16 @@
 <!-- Vertically centered modal end -->
 
  <!-- jquery latest version -->
+
+
  <script src="assets/js/jquery-3.2.1.min.js"></script>
+
  <script src="assets/js/moment.js"></script>
  <script src="assets/js/moment.min.js"></script>
- <script src="assets/js/jquery.nicescroll.min.js"></script>
 
  <script src="assets/js/jquery.slimscroll.min.js"></script>
-<!-- Date picker -->
-<script src="assets/js/daterangepicker.js"></script>
 
+ <script src="assets/js/select2.js"></script>
  <!-- bootstrap 4 js -->
  <script src="assets/js/popper.min.js"></script>
  <script src="assets/js/bootstrap.min.js"></script>
@@ -226,6 +249,13 @@
 
  <!-- others plugins -->
  <script src="assets/js/scripts.js"></script>
+ <script>
+     $(document).ready(function() {
+$('.select2').select2({
+closeOnSelect: false
+});
+});
+ </script>
 </body>
 
 </html>

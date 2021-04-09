@@ -9,7 +9,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Your default CSS. */
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype'),
+        url('SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-SemiBold.woff') format('woff'),
+        url('SegoeUI-SemiBold.ttf') format('truetype'),
+        url('SegoeUI-SemiBold.svg#SegoeUI-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-SemiboldItalic.woff') format('woff'),
+        url('SegoeUI-SemiboldItalic.ttf') format('truetype'),
+        url('SegoeUI-SemiboldItalic.svg#SegoeUI-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Bold.woff') format('woff'),
+        url('SegoeUI-Bold.ttf') format('truetype'),
+        url('SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+   
 * {
     margin: 0;
     padding: 0;

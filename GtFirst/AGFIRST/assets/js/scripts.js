@@ -78,113 +78,127 @@ $(document).ready(function() {
         height: 'auto',
     });
 
-    $('').slimScroll({
-        height: 'auto',
-        width: '300px',
-        axis: 'y'
-    });
 
-    if($(".SlimScrollTop").length) {
-        $(".SlimScrollTop").niceScroll({
-            cursorwidth: '20px',
-            autohidemode:  false,
-            zindex: 9,
-            cursorcolor: "#026C64",
-            cursorborderradius: "20px",
-            cursorborder: "1px solid #026C64",
-            background: "#E1E1E1",
-        
-            
-          railpadding: {
-           top: 20,
-           right: 0,
-           left: 0,
-           bottom:0,           
-         },
-       
-        });
-         
-      }
+    // Make New Selection – Current 
 
-      if($(".SlimScrollBottom").length) {
-        $(".SlimScrollBottom").niceScroll({
-         cursorwidth: '20px',
-         autohidemode:  false,
-         zindex: 9,
-         cursorcolor: "#026C64",
-         cursorborder: "1px solid #026C64",
-         cursorborderradius: "20px",
-         background: "#E1E1E1",
-         
-       railpadding: {
-        right: 0,
-        left: 0,
-        bottom:30,
-        
-      },
+   $('.btns').on('click', function (e) {
+    e.preventDefault();
+    $('.btns.active').removeClass('active');
+    $(this).addClass('active');
+});
+
+    $(function(){
+        $( "#Sheep" ).click(function() {
+            $( "#Current-Sheep" ).show();
+            $( "#Current-Deer" ).hide();
+            $( "#Current-Cattle" ).hide();
+         });
     
-     });
-      }
-
-      if($(".CarcassPriceScrollBottom").length) {
-        $(".CarcassPriceScrollBottom").niceScroll({
-         cursorwidth: '20px',
-         autohidemode:  false,
-         zindex: 9,
-         cursorcolor: "#026C64",
-         cursorborder: "1px solid #026C64",
-         cursorborderradius: "20px",
-         background: "#E1E1E1",
-         
-       railpadding: {
-           top:30,
-        right: 0,
-        left: 0,
-        bottom:0,
-        
-      },
     
-     });
-      }
+         $( "#Deer" ).click(function() {
+            $( "#Current-Deer" ).show();
+            $( "#Current-Sheep" ).hide();
+            $( "#Current-Cattle" ).hide();
+         });
+    
+        $( "#Cattle" ).click(function() {
+            $( "#Current-Cattle" ).show();
+            $( "#Current-Deer" ).hide();
+            $( "#Current-Sheep" ).hide();
+         });
+
+         $( "#Adult" ).click(function() {
+            $( "#Current-Adult" ).show();
+            $( "#Current-Lamb" ).hide();
+         });
+    
+    
+         $( "#Lamb" ).click(function() {
+            $( "#Current-Lamb" ).show();
+            $( "#Current-Adult" ).hide();
+         });
+    
+        $( "#Bull" ).click(function() {
+            $( "#Current-Bull" ).show();
+            $( "#Current-Steer" ).hide();
+            $( "#Current-Cow" ).hide();
+            $( "#Current-Heifer" ).hide();
+         });
+
+         $( "#Ewe" ).click(function() {
+            $( "#Current-Ewe" ).show();
+      
+         });
+         $( "#Stag" ).click(function() {
+            $( "#Current-Stag" ).show();
+      
+         });
+         
+      });
+  
 
     //   swich button
 
       $( "#togBtn" ).click(function() {
         $( "#Estimated" ).toggle();
+     });
+
+    //  perkg or perhead switch
+       $('#Atkins-PerSwitch').on('click',function(){
+            if($('.PerHead').css('display')!='none'){
+                $('.PerHead').removeClass('active');
+
+            $('.PerKg').show().siblings('.PerHead').hide();
+            }else if($('.PerKg').css('display')!='none'){
+                $('.PerHead').show().siblings('.PerKg').hide();
+                $('.PerHead').addClass('active');
+
+            }
         });
+         //  perkg or perhead switch
+      $('#Joe-PerSwitch').on('click',function(){
+        if($('.PerHead').css('display')!='none'){
+            $('.PerHead').removeClass('active');
 
-// scroll letf right
-      $(".SlimScrollTop").scroll(function(){
-        $(".SlimScrollBottom, .CarcassPriceScrollBottom")
-            .scrollLeft($(".SlimScrollTop").scrollLeft());
-    });
-    $(".SlimScrollBottom").scroll(function(){
-        $(".SlimScrollTop")
-            .scrollLeft($(".SlimScrollBottom").scrollLeft());
-          
-    });
+        $('.PerKg').show().siblings('.PerHead').hide();
+        }else if($('.PerKg').css('display')!='none'){
+            $('.PerHead').show().siblings('.PerKg').hide();
+            $('.PerHead').addClass('active');
 
-    $(".CarcassPriceScrollBottom").scroll(function(){
-        $(".SlimScrollTop")
-            .scrollLeft($(".CarcassPriceScrollBottom").scrollLeft());
-          
-    });
-
-    /*================================
-    stickey Header
-    ==================================*/
-    $(window).on('scroll', function() {
-        var scroll = $(window).scrollTop(),
-            mainHeader = $('#sticky-header'),
-            mainHeaderHeight = mainHeader.innerHeight();
-
-        // console.log(mainHeader.innerHeight());
-        if (scroll > 1) {
-            $("#sticky-header").addClass("sticky-menu");
-        } else {
-            $("#sticky-header").removeClass("sticky-menu");
         }
     });
+      
+      //  perkg or perhead switch
+      $('#Tom-PerSwitch').on('click',function(){
+        if($('.PerHead').css('display')!='none'){
+            $('.PerHead').removeClass('active');
+
+        $('.PerKg').show().siblings('.PerHead').hide();
+        }else if($('.PerKg').css('display')!='none'){
+            $('.PerHead').show().siblings('.PerKg').hide();
+            $('.PerHead').addClass('active');
+
+        }
+    });
+     
+    //   Current Market button
+        $( "#CurrentBtn" ).click(function() {
+            $( "#Current-LiveweightTable" ).toggle();
+            $(this).addClass('active');
+     });
+
+
+//  popover
+        $(document).on('click', function(e) {
+        $('[data-toggle="popover"],[data-original-title]').each(function() {
+
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide').data('bs.popover').inState.click = false 
+            }
+
+        });
+        });
+     
 
     /*================================
     form bootstrap validation
@@ -207,86 +221,8 @@ $(document).ready(function() {
         });
     }, false);
 
-    /*================================
-    datatable active
-    ==================================*/
-    if ($('#dataTable').length) {
-        $('#dataTable').DataTable({
-            responsive: true
-        });
-    }
-    if ($('#dataTable2').length) {
-        $('#dataTable2').DataTable({
-            responsive: true
-        });
-    }
-    if ($('#dataTable3').length) {
-        $('#dataTable3').DataTable({
-            responsive: true
-        });
-    }
 
 
-    /*================================
-    Slicknav mobile menu
-    ==================================*/
-    $('ul#nav_menu').slicknav({
-        prependTo: "#mobile_menu"
-    });
-
-    /*================================
-    login form
-    ==================================*/
-    $('.form-gp input').on('focus', function() {
-        $(this).parent('.form-gp').addClass('focused');
-    });
-    $('.form-gp input').on('focusout', function() {
-        if ($(this).val().length === 0) {
-            $(this).parent('.form-gp').removeClass('focused');
-        }
-    });
-
-    /*================================
-    slider-area background setting
-    ==================================*/
-    $('.settings-btn, .offset-close').on('click', function() {
-        $('.offset-area').toggleClass('show_hide');
-        $('.settings-btn').toggleClass('active');
-    });
-
-    /*================================
-    Owl Carousel
-    ==================================*/
-    function slider_area() {
-        var owl = $('.testimonial-carousel').owlCarousel({
-            margin: 50,
-            loop: true,
-            autoplay: false,
-            nav: false,
-            dots: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                450: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                },
-                1000: {
-                    items: 2
-                },
-                1360: {
-                    items: 1
-                },
-                1600: {
-                    items: 2
-                }
-            }
-        });
-    }
-    slider_area();
 
     /*================================
     Fullscreen Page
